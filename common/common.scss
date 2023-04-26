@@ -128,7 +128,7 @@ body {
     background: transparent;
 }
 
-
+.pinned-options.select-kit .select-kit-header,
 .notifications-button.select-kit .select-kit-header {
     border: 1px solid var(--primary-300);
 }
@@ -711,6 +711,8 @@ nav.post-controls .actions > button.reply:last-child * {
     box-shadow: var(--float-btn-shadow);
     border-color: var(--tertiary-500)
 }
+
+
 
 /* Post stream */
 

@@ -163,7 +163,10 @@ body {
     color: var(--secondary);
 }
 
-.composer-controls .btn, .composer-controls .btn:hover {
+.composer-controls .btn,
+.discourse-no-touch .composer-controls .btn:hover,
+.discourse-no-touch .composer-controls .btn.btn-hover,
+.discourse-no-touch .composer-controls .btn:focus {
     background-color: transparent;
 }
 

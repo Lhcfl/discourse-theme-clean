@@ -128,6 +128,9 @@ body {
     background: transparent;
 }
 
+.follow-button-container .btn,
+.categories-admin-dropdown.select-kit .select-kit-header,
+.user-notifications.select-kit .select-kit-header,
 .pinned-options.select-kit .select-kit-header,
 .notifications-button.select-kit .select-kit-header {
     border: 1px solid var(--primary-300);
@@ -365,13 +368,30 @@ input:hover,
     padding: 10px;
     border-radius: var(--ant-radius);
 }
-.new-user-wrapper .new-user-content-wrapper {
+.new-user-wrapper {
     border: 1px solid var(--primary-low);
     padding: 10px;
     border-radius: var(--ant-radius);
-    margin-top: 10px;
-    width: calc(100% - 20px);
+    margin-top: 15px;
+    width: calc(100% - 21px);
+    background: var(--secondary);
 }
+    
+
+.user-main .about.has-background,
+.user-main .about.no-background {
+    border: 1px solid var(--primary-low);
+    border-radius: var(--ant-radius);
+    margin-top: 15px;
+    overflow: hidden;
+    width: calc(100% - 2px);
+}
+.user-main .about.no-background .details,
+.user-main .about.has-background .details {
+    padding: 10px 10px;
+    border: none;
+}
+
 
 /* Alert */
 .alert.alert-info {
@@ -512,18 +532,29 @@ nav.post-controls .actions .double-button button:last-child {
 
 nav.post-controls .actions > button.edit:last-child,
 nav.post-controls .actions > button.reply:last-child {
-    border: 1px solid transparent;
-    background: var(--tertiary);
-    color: var(--secondary);
+    border: 1px solid var(--tertiary-800);
+    background: var(--seecondary);
     box-shadow: var(--btn-box-shadow);
     opacity: 1;
+    transition: all 0.3s;
 }
 nav.post-controls .actions > button.edit:last-child:hover,
 nav.post-controls .actions > button.reply:last-child:hover {
     background: var(--tertiary-hover);
+    border: 1px solid var(--tertiary);
+}
+nav.post-controls .actions > button.edit:last-child:active,
+nav.post-controls .actions > button.reply:last-child:active {
+    scale: 0.95;
 }
 nav.post-controls .actions > button.edit:last-child *,
 nav.post-controls .actions > button.reply:last-child * {
+    color:var(--tertiary-800);
+    font-size: 90%;
+    transition: all 0.3s;
+}
+nav.post-controls .actions > button.edit:last-child:hover *,
+nav.post-controls .actions > button.reply:last-child:hover * {
     color: var(--secondary);
 }
 
@@ -826,4 +857,33 @@ div.edit-category .edit-category-nav .nav-stacked,
     padding-left: 10px;
     margin: 10px;
     color: var(--primary);
+}
+
+/*   uod   */
+.popup-tip.bad {
+    border-radius: var(--ant-radius);
+    border: 1px solid var(--tertiary);
+}
+    
+.user-card, .group-card,
+.user-card .card-content, .group-card .card-content {
+    border-radius: var(--ant-radius);
+    outline: none;
+}
+    
+.top-sub-section li {
+    border: none;
+}
+    
+.badge-card {
+    border-radius: var(--ant-radius);
+}
+
+.user-menu.revamped .quick-access-panel li {
+    border-radius: var(--ant-radius);
+    transition: all 0.3s;
+}
+    
+.user-menu.revamped .quick-access-panel li .btn {
+    border-color: transparent !important;
 }

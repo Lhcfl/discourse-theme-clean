@@ -163,6 +163,15 @@ body {
     color: var(--secondary);
 }
 
+.composer-controls .btn, .composer-controls .btn:hover {
+    background-color: transparent;
+}
+
+.desktop-view #reply-control {
+    border-radius: var(--ant-radius);
+    overflow: hidden;
+}
+
 /* select-kit combox */
 
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
@@ -255,6 +264,10 @@ input:hover,
 .discourse-no-touch .d-editor-textarea-wrapper:hover {
     border: 1px solid var(--tertiary-800);
     transition: all 0.3s;
+}
+
+.discourse-no-touch .d-editor-textarea-wrapper textarea:hover {
+    border: none !important;
 }
 
 

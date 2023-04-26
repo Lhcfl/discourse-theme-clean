@@ -702,7 +702,7 @@ nav.post-controls .actions > button.reply:last-child * {
 .timeline-open-jump-to-post-prompt-btn.btn * {
     color: var(--secondary);
 }
-#topic-progress-wrapper .btn {
+#topic-progress-wrapper .btn.toggle-admin-menu {
     box-shadow: var(--float-btn-shadow);
 }
 #topic-progress {

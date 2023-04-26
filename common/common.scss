@@ -756,7 +756,15 @@ nav.post-controls .actions > button.reply:last-child:hover * {
     border-radius: var(--ant-radius);
     overflow: hidden;
     box-shadow: var(--float-btn-shadow);
-    border-color: var(--tertiary-500)
+    border-color: var(--tertiary-500);
+}
+
+#topic-progress-wrapper.docked {
+    margin-top: 10px;
+}
+#topic-progress-wrapper.docked .btn.toggle-admin-menu,
+#topic-progress-wrapper.docked #topic-progress {
+    box-shadow: none;
 }
 
 

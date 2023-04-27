@@ -691,14 +691,14 @@ nav.post-controls .actions > button.reply:last-child:hover * {
     .modal-footer {
         padding: 14px 15px 10px 15px;
     }
-    .user-main .about .controls ul li {
+    .mobile-view .user-main .about .controls ul li {
         flex: unset;
         width: max-content;
     }
-    .user-main .about .controls ul li .btn.btn-icon-text:not(.compose-pm) {
+    .mobile-view .user-main .about .controls ul li .btn.btn-icon-text:not(.compose-pm) {
         width: calc(50vw - 45px);
     }
-    .user-main .details .btn-primary.compose-pm,
+    .mobile-view .user-main .details .btn-primary.compose-pm,
     .container.group .group-details-button .group-message-button.btn-primary,
     #create-topic.btn-default {
         position: fixed;
@@ -711,12 +711,12 @@ nav.post-controls .actions > button.reply:last-child:hover * {
         z-index: 99;
         box-shadow: var(--float-btn-shadow);
     }
-    .user-main .details .btn-primary.compose-pm .d-button-label,
+    .mobile-view .user-main .details .btn-primary.compose-pm .d-button-label,
     .container.group .group-details-button .group-message-button.btn-primary .d-button-label,
     #create-topic.btn-default .d-button-label {
         display: none;
     }
-    .user-main .details .btn-primary.compose-pm .d-icon,
+    .mobile-view .user-main .details .btn-primary.compose-pm .d-icon,
     .container.group .group-details-button .group-message-button.btn-primary .d-icon,
     #create-topic.btn-default .d-icon {
         margin: 0;

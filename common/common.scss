@@ -924,3 +924,15 @@ div.edit-category .edit-category-nav .nav-stacked,
     background: rgba(var(--tertiary-rgb), 0.2);
     border: none;
 }
+
+.mobile-nav .drop.expanded {
+    box-shadow: var(--menu-box-shadow);
+    border-radius: var(--ant-radius);
+    animation: 0.3s panel-drop-down;
+}
+
+.mobile-nav>li>a.expander {
+    border: 1px solid var(--primary-300);
+    border-radius: 6px;
+    transition: all 0.3s;
+}

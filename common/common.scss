@@ -936,3 +936,19 @@ div.edit-category .edit-category-nav .nav-stacked,
     border-radius: 6px;
     transition: all 0.3s;
 }
+
+.dialog-content {
+    border-radius: var(--ant-radius);
+}
+.btn-reply-here {
+    border: 1px solid var(--primary-400);
+}
+.btn-reply-here * {
+    transition: all 0.3s;
+}
+.btn-reply-here:hover * {
+    color: var(--tertiary-800) !important;
+}
+.reply-where-modal .btn.btn-reply-where__cancel:hover {
+    background: transparent;
+}

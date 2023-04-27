@@ -685,6 +685,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
     background: var(--tertiary-hover);
 }
 @media(max-width: 780px) {
+    .user-main .details .btn-primary.compose-pm,
     .container.group .group-details-button .group-message-button.btn-primary,
     #create-topic.btn-default {
         position: fixed;
@@ -697,11 +698,13 @@ nav.post-controls .actions > button.reply:last-child:hover * {
         z-index: 99;
         box-shadow: var(--float-btn-shadow);
     }
-    .container.group .group-details-button .group-message-button.btn-primary,
+    .user-main .details .btn-primary.compose-pm .d-button-label,
+    .container.group .group-details-button .group-message-button.btn-primary .d-button-label,
     #create-topic.btn-default .d-button-label {
         display: none;
     }
-    .container.group .group-details-button .group-message-button.btn-primary,
+    .user-main .details .btn-primary.compose-pm .d-icon,
+    .container.group .group-details-button .group-message-button.btn-primary .d-icon,
     #create-topic.btn-default .d-icon {
         margin: 0;
         font-size: 140%;

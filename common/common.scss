@@ -899,3 +899,9 @@ div.edit-category .edit-category-nav .nav-stacked,
 .more-buttons.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection {
     box-shadow: none;
 }
+
+.header-dropdown-toggle.chat-header-icon .icon.active {
+    border-radius: 100%;
+    background: rgba(var(--tertiary-rgb), 0.2);
+    border: none;
+}

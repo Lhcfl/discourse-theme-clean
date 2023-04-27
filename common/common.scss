@@ -684,7 +684,20 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 #create-topic.btn-default:hover {
     background: var(--tertiary-hover);
 }
+.mobile-view .group-details-after-outlet.invite {
+    margin-top: 8px;
+}
 @media(max-width: 780px) {
+    .modal-footer {
+        padding: 14px 15px 10px 15px;
+    }
+    .user-main .about .controls ul li {
+        flex: unset;
+        width: max-content;
+    }
+    .user-main .about .controls ul li .btn.btn-icon-text:not(.compose-pm) {
+        width: calc(50vw - 45px);
+    }
     .user-main .details .btn-primary.compose-pm,
     .container.group .group-details-button .group-message-button.btn-primary,
     #create-topic.btn-default {

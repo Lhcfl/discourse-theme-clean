@@ -685,6 +685,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
     background: var(--tertiary-hover);
 }
 @media(max-width: 780px) {
+    .container.group .group-details-button .group-message-button.btn-primary,
     #create-topic.btn-default {
         position: fixed;
         border-radius: 100%;
@@ -696,9 +697,11 @@ nav.post-controls .actions > button.reply:last-child:hover * {
         z-index: 99;
         box-shadow: var(--float-btn-shadow);
     }
+    .container.group .group-details-button .group-message-button.btn-primary,
     #create-topic.btn-default .d-button-label {
         display: none;
     }
+    .container.group .group-details-button .group-message-button.btn-primary,
     #create-topic.btn-default .d-icon {
         margin: 0;
         font-size: 140%;

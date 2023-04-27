@@ -693,7 +693,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
         height: 60px;
         right: 20px;
         bottom: 30px;
-        z-index: 2;
+        z-index: 99;
         box-shadow: var(--float-btn-shadow);
     }
     #create-topic.btn-default .d-button-label {

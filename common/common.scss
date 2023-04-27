@@ -960,17 +960,7 @@ div.edit-category .edit-category-nav .nav-stacked,
 .sidebar-wrapper .sidebar-sections {
     --scrollbarThumbBg: var(--tertiary-200)
 }
-.sidebar-wrapper .sidebar-sections:before {
-    position: fixed;
-    content: "";
-    display: block;
-    height: 1.5em;
-    margin-top: -23px;
-    z-index: 2;
-    width: calc(var(--d-sidebar-width) - 10px);
-    pointer-events: none;
-    background: linear-gradient(to top, rgba(var(--secondary-rgb), 0), rgba(var(--secondary-rgb), 1));
-}
+
 .sidebar-footer-wrapper .sidebar-footer-container:before {
     background: linear-gradient(to bottom, rgba(var(--secondary-rgb), 0), rgba(var(--secondary-rgb), 1));
 }

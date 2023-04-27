@@ -965,7 +965,7 @@ div.edit-category .edit-category-nav .nav-stacked,
     content: "";
     display: block;
     height: 1.5em;
-    top: var(--header-offset);
+    margin-top: -23px;
     z-index: 2;
     width: calc(var(--d-sidebar-width) - 10px);
     pointer-events: none;

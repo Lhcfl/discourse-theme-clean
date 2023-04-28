@@ -977,3 +977,8 @@ div.edit-category .edit-category-nav .nav-stacked,
     border-radius: var(--ant-radius);
     box-shadow: var(--menu-box-shadow);
 }
+
+.discourse-no-touch .btn-flat:hover .badge-notification .d-icon,
+.discourse-no-touch .btn-flat.btn-hover .badge-notification .d-icon {
+    color: var(--secondary);
+}

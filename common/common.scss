@@ -982,3 +982,15 @@ div.edit-category .edit-category-nav .nav-stacked,
 .discourse-no-touch .btn-flat.btn-hover .badge-notification .d-icon {
     color: var(--secondary);
 }
+
+.chat-emoji-picker__filter.dc-filter-input-container {
+    border-radius: var(--ant-radius);
+    background: var(--secondary);
+    border: 1px solid var(--primary-300);
+    transition: all 0.3s;
+}
+.chat-emoji-picker__filter.dc-filter-input-container:hover, 
+.chat-emoji-picker__filter.dc-filter-input-container:focus
+{
+    border: 1px solid var(--tertiary-800);
+}

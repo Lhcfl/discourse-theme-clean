@@ -964,3 +964,11 @@ div.edit-category .edit-category-nav .nav-stacked,
 .sidebar-footer-wrapper .sidebar-footer-container:before {
     background: linear-gradient(to bottom, rgba(var(--secondary-rgb), 0), rgba(var(--secondary-rgb), 1));
 }
+
+.btn.btn-danger.btn-icon:not(:hover) {
+    background: var(--secondary);
+    border: 1px solid var(--danger);
+}
+.btn.btn-danger.btn-icon:not(:hover) * {
+    color: var(--danger)
+}

@@ -710,6 +710,12 @@ nav.post-controls .actions > button.reply:last-child:hover * {
         bottom: 30px;
         z-index: 99;
         box-shadow: var(--float-btn-shadow);
+        transition: all 0.5s ease;
+    }
+    .mobile-view .nav-controls-hidden .user-main .details .btn-primary.compose-pm,
+    .nav-controls-hidden .container.group .group-details-button .group-message-button.btn-primary,
+    .nav-controls-hidden #create-topic.btn-default {
+        right: -90px;
     }
     .mobile-view .user-main .details .btn-primary.compose-pm .d-button-label,
     .container.group .group-details-button .group-message-button.btn-primary .d-button-label,
@@ -993,4 +999,11 @@ div.edit-category .edit-category-nav .nav-stacked,
 .chat-emoji-picker__filter.dc-filter-input-container:focus
 {
     border: 1px solid var(--tertiary-800);
+}
+
+.mobile-view .navigation-topics .list-controls .navigation-container .category-breadcrumb,
+.mobile-view .categories-list .list-controls .navigation-container .category-breadcrumb, 
+.mobile-view body[class*=tag-]:not(.archetype-regular):not(.archetype-banner) .list-controls .navigation-container .category-breadcrumb, 
+.mobile-view body[class*=category-]:not(.archetype-regular):not(.archetype-banner) .list-controls .navigation-container .category-breadcrumb {
+    display: flex !important;
 }

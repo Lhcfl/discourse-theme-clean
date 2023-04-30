@@ -698,6 +698,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
     .mobile-view .user-main .about .controls ul li .btn.btn-icon-text:not(.compose-pm) {
         width: calc(50vw - 45px);
     }
+    .user-main .navigation-controls .new-private-message.btn,
     .mobile-view .user-main .details .btn-primary.compose-pm,
     .container.group .group-details-button .group-message-button.btn-primary,
     #create-topic.btn-default {
@@ -711,17 +712,21 @@ nav.post-controls .actions > button.reply:last-child:hover * {
         z-index: 99;
         box-shadow: var(--float-btn-shadow);
         transition: all 0.5s ease;
+        margin: 0;
     }
+    .nav-controls-hidden .user-main .navigation-controls .new-private-message.btn,
     .mobile-view .nav-controls-hidden .user-main .details .btn-primary.compose-pm,
     .nav-controls-hidden .container.group .group-details-button .group-message-button.btn-primary,
     .nav-controls-hidden #create-topic.btn-default {
         right: -90px;
     }
+    .user-main .navigation-controls .new-private-message.btn .d-button-label,
     .mobile-view .user-main .details .btn-primary.compose-pm .d-button-label,
     .container.group .group-details-button .group-message-button.btn-primary .d-button-label,
     #create-topic.btn-default .d-button-label {
         display: none;
     }
+    .user-main .navigation-controls .new-private-message.btn .d-icon,
     .mobile-view .user-main .details .btn-primary.compose-pm .d-icon,
     .container.group .group-details-button .group-message-button.btn-primary .d-icon,
     #create-topic.btn-default .d-icon {
@@ -1006,4 +1011,56 @@ div.edit-category .edit-category-nav .nav-stacked,
 .mobile-view body[class*=tag-]:not(.archetype-regular):not(.archetype-banner) .list-controls .navigation-container .category-breadcrumb, 
 .mobile-view body[class*=category-]:not(.archetype-regular):not(.archetype-banner) .list-controls .navigation-container .category-breadcrumb {
     display: flex !important;
+}
+
+/*  Upd at 2023/4/30 */
+
+.mobile-view .full-width #list-area .topic-list .topic-list-body {
+    border-top: none;
+}
+
+.mobile-view .list-controls .nav-pills>li a:not(.active) {
+    box-shadow: 0 3px 0 var(--primary-low);
+}
+.mobile-view .list-controls #navigation-bar.nav-pills {
+    flex-wrap: nowrap;
+}
+.mobile-view .list-controls #navigation-bar.nav-pills>li,
+.mobile-view .list-controls #navigation-bar.nav-pills>li a{
+    justify-content: center;
+    min-width: max-content;
+    width: 100%;
+}
+    
+@media(max-width: 780px) {
+    .mobile-view .list-controls .navigation-controls {
+        position: fixed;
+/*         border: 2px solid; */
+        width: 40px;
+        right: 27px;
+        bottom: 90px;
+        z-index: 99;
+        transition: all 0.5s ease;
+    }
+    .mobile-view .list-controls .navigation-controls > .btn,
+    .mobile-view .list-controls .navigation-controls > .notifications-button.select-kit .select-kit-header{
+        border-radius: 100%;
+        border: 1px solid var(--primary-300);
+        color: var(--secondary);
+        box-shadow: var(--float-btn-shadow);
+    }
+    .mobile-view .list-controls .navigation-controls > .btn .d-icon,
+    .mobile-view .list-controls .navigation-controls > .notifications-button.select-kit .select-kit-header .d-icon{
+        color: var(--primary-high);
+    }
+    .mobile-view .list-controls .navigation-controls > .notifications-button.select-kit .select-kit-header .d-icon.d-icon-d-watching{
+        color: var(--tertiary);
+    }
+    .mobile-view .list-controls .navigation-controls > .btn:hover,
+    .mobile-view .list-controls .navigation-controls > .notifications-button.select-kit .select-kit-header:hover {
+        border: 1px solid var(--tertiary-800);
+    }
+    .mobile-view .nav-controls-hidden .list-controls .navigation-controls {
+        right: -80px;
+    }
 }

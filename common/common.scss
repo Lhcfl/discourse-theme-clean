@@ -1078,3 +1078,10 @@ div.edit-category .edit-category-nav .nav-stacked,
 .mobile-view .list-controls .navigation-controls > .categories-admin-dropdown.select-kit.is-expanded .select-kit-header{
     border: 1px solid var(--tertiary-800);
 }
+
+.chat-composer.is-send-enabled .chat-composer__send-btn {
+    background: var(--tertiary);
+}
+.chat-composer.is-send-disabled .chat-composer__send-btn:hover {
+    background: var(--tertiary-hover) !important;
+}

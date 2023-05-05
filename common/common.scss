@@ -1085,3 +1085,9 @@ div.edit-category .edit-category-nav .nav-stacked,
 .chat-composer.is-send-disabled .chat-composer__send-btn:hover {
     background: var(--tertiary-hover) !important;
 }
+
+aside.onebox {
+    border-radius: var(--ant-radius);
+    border: 1px solid var(--primary-low);
+    background: var(--primary-very-low);
+}

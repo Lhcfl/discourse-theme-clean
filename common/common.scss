@@ -1091,3 +1091,10 @@ aside.onebox {
     border: 1px solid var(--primary-low);
     background: var(--primary-very-low);
 }
+
+.mobile-view .discourse-reactions-counter {
+    height: 37px;
+}
+.mobile-view .discourse-reactions-actions .reactions-counter {
+    padding-top: 0;
+}

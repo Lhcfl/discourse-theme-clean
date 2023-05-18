@@ -1115,3 +1115,7 @@ aside.onebox {
 .chat-composer.is-focused .chat-composer__inner-container {
     box-shadow: 0 0 4px 1px var(--tertiary-low);
 }
+
+.chat-composer-dropdown__action-btn.btn {
+    justify-content: start;
+}

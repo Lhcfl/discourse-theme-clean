@@ -194,14 +194,17 @@ body {
 
 @media (min-width: 1000px) {
     .select-kit .select-kit-header:not(.btn),
-.list-controls .combo-box .combo-box-header {
+    .list-controls .combo-box .combo-box-header {
         min-width: 120px;
     }
     .sidebar-wrapper .select-kit .select-kit-header:not(.btn),
-.sidebar-wrapper .list-controls .combo-box .combo-box-header {
+    .sidebar-wrapper .list-controls .combo-box .combo-box-header {
         min-width: unset;
     }
-
+    .sidebar-section-form-modal .select-kit .select-kit-header:not(.btn),
+    .sidebar-section-form-modal .list-controls .combo-box .combo-box-header {
+        min-width: unset;
+    }
 }
 
 .select-kit .d-icon,

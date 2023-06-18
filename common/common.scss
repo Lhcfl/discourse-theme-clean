@@ -1122,3 +1122,13 @@ aside.onebox {
 .chat-composer-dropdown__action-btn.btn {
     justify-content: start;
 }
+
+.tippy-box[data-theme=user-tips] .btn-flat, .tippy-box[data-theme=user-tips] .json-editor-btn-collapse {
+    background: transparent !important; 
+    color: var(--secondary) !important;
+}
+    
+.tippy-box[data-theme=user-tips] .btn-primary {
+    background: var(--secondary) !important;
+    color: var(--tertiary) !important;
+}

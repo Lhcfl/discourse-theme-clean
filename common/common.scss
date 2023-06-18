@@ -444,7 +444,7 @@ body.has-full-page-chat .alert-info {
     border: 1px solid var(--primary-low);
     border-radius: var(--ant-radius);
 }
-.chat-channel-unread-indicator {
+.d-header .chat-channel-unread-indicator {
     scale: 0.7;
     transform: translate(-5px, 26px);
 }

@@ -432,6 +432,13 @@ body.has-full-page-chat .alert-info {
 
 
 /* chat */
+.btn.no-text.btn-flat.chat-scroll-to-bottom__button {
+    background: transparent;
+    .d-icon {
+        color: var(--secondary) !important;
+    }
+}
+
 .desktop-view.has-full-page-chat:not(.discourse-sidebar) #main-outlet {
     margin-left: 10px;
 }

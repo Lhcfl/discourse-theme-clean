@@ -2,10 +2,10 @@
   "name": "Clean",
   "component": false,
   "license_url": null,
-  "about_url": null,
+  "about_url": "https://meta.discourse.org/t/clean-a-clean-style-discourse-theme/262946",
   "authors": "Lhc_fl",
   "theme_version": null,
-  "minimum_discourse_version": null,
+  "minimum_discourse_version": "3.0.0",
   "maximum_discourse_version": null,
   "assets": {
   },

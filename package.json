@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@discourse/lint-configs": "^1.3.7",
+    "ember-template-lint": "^5.13.0",
+    "eslint": "^8.56.0",
+    "prettier": "^2.8.8"
+  },
+  "scripts": {
+    "pretty:all": "yarn prettier -w $(git ls-files '*.hbs') $(git ls-files '*.js') $(git ls-files '*.gjs') $(git ls-files '*.yml') $(git ls-files '*.scss')", 
+    "pretty": "yarn prettier -w $(git ls-files -m '*.hbs') $(git ls-files -m '*.js') $(git ls-files -m '*.gjs') $(git ls-files -m '*.yml') $(git ls-files -m '*.scss')" 
+  }
+}

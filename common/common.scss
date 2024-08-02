@@ -1328,4 +1328,13 @@ aside.onebox {
   color: var(--tertiary) !important;
 }
 
+html.mobile-view {
+  .user-main .details .controls ul {
+    flex-direction: row;
+    li {
+      margin: 0 5px 0 5px;
+    }
+  }
+}
+
 @import "components/clean-user-card";

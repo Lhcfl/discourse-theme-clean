@@ -1,0 +1,128 @@
+{{#unless @outletArgs.collapsedInfo}}
+  {{log @outletArgs.model}}
+  <div class="secondary" id="clean-user-info-panel">
+    <table class="big-info">
+      <tbody>
+        <tr>
+          {{#if @outletArgs.model.post_count}}
+            <td class="post-count">
+              {{@outletArgs.model.post_count}}
+            </td>
+          {{/if}}
+          {{#if @outletArgs.model.total_followers}}
+            <td class="total-followers">
+              {{@outletArgs.model.total_followers}}
+            </td>
+          {{/if}}
+          {{#if @outletArgs.model.total_following}}
+            <td class="total-following">
+              {{@outletArgs.model.total_following}}
+            </td>
+          {{/if}}
+        </tr>
+      </tbody>
+      <tfoot>
+        {{#if @outletArgs.model.post_count}}
+          <td class="post_count">
+            {{i18n
+              "user.summary.post_count"
+              count=@outletArgs.model.post_count
+            }}
+          </td>
+        {{/if}}
+        {{#if @outletArgs.model.total_followers}}
+          <td class="total-followers">
+            {{i18n "user.followers.label"}}
+          </td>
+        {{/if}}
+        {{#if @outletArgs.model.total_following}}
+          <td class="total-following">
+            {{i18n "user.following.label"}}
+          </td>
+        {{/if}}
+      </tfoot>
+    </table>
+    <table class="small-info">
+      <tbody>
+        {{#if @outletArgs.model.created_at}}<tr class="created-at">
+            <th>
+              {{d-icon "calendar-day"}}
+              {{i18n "user.created"}}
+            </th>
+            <td> {{bound-date @outletArgs.model.created_at}} </td>
+          </tr>
+        {{/if}}
+        {{#if @outletArgs.model.last_posted_at}}<tr class="last-posted-at">
+            <th>
+              {{d-icon "comment-dots"}}
+              {{i18n "user.last_posted"}}
+            </th>
+            <td> {{bound-date @outletArgs.model.last_posted_at}}</td>
+          </tr>
+        {{/if}}
+        {{#if @outletArgs.model.last_seen_at}}<tr class="last-seen-at">
+            <th>
+              {{d-icon "clock"}}
+              {{i18n "user.last_seen"}}
+            </th>
+            <td> {{bound-date @outletArgs.model.last_seen_at}}</td>
+          </tr>
+        {{/if}}
+        {{#if @outletArgs.model.profile_view_count}}
+          <tr class="profile-view-count"><th>{{d-icon "chart-bar"}}
+              {{i18n "views"}}</th><td
+              class="profile-view-count"
+            >{{@outletArgs.model.profile_view_count}}</td></tr>
+        {{/if}}
+        {{#if @outletArgs.model.invited_by}}
+          <tr class="invited-by"><th>
+              {{d-icon "user-plus"}}
+              {{i18n "user.invited_by"}}
+            </th><td>
+              {{avatar @outletArgs.model.invited_by imageSize="tiny"}}
+              <LinkTo
+                @route="user"
+                @model={{@outletArgs.model.invited_by}}
+              >{{@outletArgs.model.invited_by.username}}</LinkTo></td></tr>
+        {{/if}}
+        {{#if @outletArgs.model.trustLevel}}
+          <tr class="trust-level"><th>{{d-icon "user-graduate"}}
+              {{i18n "user.trust_level"}}</th><td
+            >{{@outletArgs.model.trustLevel.name}}</td></tr>
+        {{/if}}
+        {{#if @outletArgs.model.displayGroups}}
+          <tr class="group-names">
+            <th>
+              {{d-icon "layer-group"}}
+              {{i18n
+                "groups.title"
+                count=@outletArgs.model.displayGroups.length
+              }}
+            </th>
+            <td>
+              {{#each @outletArgs.model.displayGroups as |group|}}
+                <span><LinkTo
+                    @route="group"
+                    @model={{group.name}}
+                    class="group-link"
+                  >{{group.name}}</LinkTo></span>
+              {{/each}}
+
+              <LinkTo
+                @route="groups"
+                @query={{hash username=@outletArgs.model.username}}
+              >
+                ...
+              </LinkTo>
+            </td>
+          </tr>
+        {{/if}}
+      </tbody>
+    </table>
+    <PluginOutlet
+      @name="user-profile-secondary"
+      @connectorTagName="div"
+      @outletArgs={{hash model=@outletArgs.model}}
+    />
+  </div>
+{{/unless}}

@@ -1,0 +1,35 @@
+.user-main .about #clean-user-info-panel {
+  html.desktop-view & {
+    display: none;
+  }
+  table {
+    &.big-info {
+      text-align: center;
+      table-layout: fixed;
+      td {
+        width: fit-content;
+      }
+      tbody {
+        font-size: var(--font-up-5);
+      }
+      tfoot {
+        font-size: var(--font-down-2);
+      }
+    }
+    &.small-info tbody {
+      border-top: none;
+    }
+    width: 100%;
+    img.avatar {
+      margin: 0 5px 0 0;
+    }
+    tr {
+      border-bottom: none;
+    }
+  }
+  color: var(--primary);
+  margin-bottom: -10px;
+}
+.mobile-view #collapsed-info-panel {
+  display: none;
+}

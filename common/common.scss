@@ -834,15 +834,6 @@ nav.post-controls .actions > button.reply:last-child:hover * {
     flex: unset;
     width: max-content;
   }
-  .mobile-view
-    .user-main
-    .about
-    .controls
-    ul
-    li
-    .btn.btn-icon-text:not(.compose-pm) {
-    width: calc(50vw - 45px);
-  }
   .user-main .navigation-controls .new-private-message.btn,
   .mobile-view .user-main .details .btn-primary.compose-pm,
   .container.group .group-details-button .group-message-button.btn-primary,
@@ -1201,12 +1192,13 @@ div.edit-category .edit-category-nav .nav-stacked,
 }
 .mobile-view .list-controls #navigation-bar.nav-pills {
   flex-wrap: nowrap;
-}
-.mobile-view .list-controls #navigation-bar.nav-pills > li,
-.mobile-view .list-controls #navigation-bar.nav-pills > li a {
-  justify-content: center;
-  min-width: max-content;
-  width: 100%;
+  > li,
+  > li a {
+    justify-content: center;
+    min-width: max-content;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 @media (max-width: 780px) {

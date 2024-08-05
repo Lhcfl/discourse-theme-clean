@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-ExtraLight.eot");
+  src: url("Inter-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("Inter-ExtraLight.svg#Inter-ExtraLight") format("svg"),
+    url("Inter-ExtraLight.ttf") format("truetype"),
+    url("Inter-ExtraLight.woff") format("woff"),
+    url("Inter-ExtraLight.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Thin.eot");
+  src: url("Inter-Thin.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Thin.svg#Inter-Thin") format("svg"),
+    url("Inter-Thin.ttf") format("truetype"),
+    url("Inter-Thin.woff") format("woff"),
+    url("Inter-Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Light.eot");
+  src: url("Inter-Light.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Light.svg#Inter-Light") format("svg"),
+    url("Inter-Light.ttf") format("truetype"),
+    url("Inter-Light.woff") format("woff"),
+    url("Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Regular.eot");
+  src: url("Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Regular.svg#Inter-Regular") format("svg"),
+    url("Inter-Regular.ttf") format("truetype"),
+    url("Inter-Regular.woff") format("woff"),
+    url("Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Medium.eot");
+  src: url("Inter-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Medium.svg#Inter-Medium") format("svg"),
+    url("Inter-Medium.ttf") format("truetype"),
+    url("Inter-Medium.woff") format("woff"),
+    url("Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-SemiBold.eot");
+  src: url("Inter-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("Inter-SemiBold.svg#Inter-SemiBold") format("svg"),
+    url("Inter-SemiBold.ttf") format("truetype"),
+    url("Inter-SemiBold.woff") format("woff"),
+    url("Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Bold.eot");
+  src: url("Inter-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Bold.svg#Inter-Bold") format("svg"),
+    url("Inter-Bold.ttf") format("truetype"),
+    url("Inter-Bold.woff") format("woff"),
+    url("Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-Black.eot");
+  src: url("Inter-Black.eot?#iefix") format("embedded-opentype"),
+    url("Inter-Black.svg#Inter-Black") format("svg"),
+    url("Inter-Black.ttf") format("truetype"),
+    url("Inter-Black.woff") format("woff"),
+    url("Inter-Black.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}

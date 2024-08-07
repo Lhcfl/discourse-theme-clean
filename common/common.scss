@@ -299,7 +299,9 @@ nav.post-controls .actions button {
 .discourse-no-touch .composer-controls .btn:focus {
   background-color: transparent;
 }
-
+.open .grippie{
+  background: transparent;
+}
 .fk-d-menu {
   .btn.btn-icon-text {
     border: none !important;
@@ -424,6 +426,14 @@ nav.post-controls .actions button {
 
 /* Text input */
 
+@mixin default-focus() {
+  border-color: var(--tertiary);
+  outline: 2px solid var(--tertiary);
+  outline-offset: -2px;
+  border: 1px solid #d0cfd4;
+
+}
+
 textarea:focus,
 .search-menu .search-input:focus-within,
 input[type="text"]:focus,
@@ -441,6 +451,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus {
   outline: none;
+  border: 1px solid #d0cfd4;
 }
 textarea,
 .search-menu .search-input,
@@ -458,16 +469,18 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  border: 1px solid var(--primary-300);
   transition: all 0.3s;
-  border-radius: var(--d-input-border-radius);
+  border-radius: 4px;
+  border: 1px solid #d0cfd4;
+  background: #f3f3f4;
 }
 .discourse-no-touch textarea:hover,
 .search-menu .search-input:hover,
 input:hover,
 .discourse-no-touch .d-editor-textarea-wrapper:hover {
-  border: 1px solid var(--tertiary-800);
+  border: 1px solid #d0cfd4;
   transition: all 0.3s;
+  border-radius: 4px;
 }
 
 .discourse-no-touch .d-editor-textarea-wrapper textarea:hover {

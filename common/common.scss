@@ -49,18 +49,13 @@ th {
 .btn-small,
 .btn-primary {
   border-radius: 4px;
-  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160F26);
-  background: var(--Grey-neutral-white, #FFF);
+  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  background: var(--Grey-neutral-white, #fff);
 }
 
-@mixin make-btn-border-and-d-icon(
-  $border-color: 0,
-  $bg-color: 0,
-  $text-color: 0
-) {
-
+@mixin make-btn-border-and-d-icon($bg-color: 0, $text-color: 0) {
   @if $bg-color != 0 {
-    background-color: #E8E7E9;
+    background-color: #e8e7e9;
   }
   @if $text-color != 0 {
     color: $text-color;
@@ -299,7 +294,6 @@ nav.post-controls .actions button {
 .select-kit.single-select.dropdown-select-box.is-expanded
   .select-kit-collection,
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
-  box-shadow: var(--menu-box-shadow);
   border-radius: var(--ant-radius);
 }
 
@@ -455,14 +449,14 @@ input:hover,
       }
       &.active {
         background-color: transparent;
-        box-shadow: 0 1.5px 0 var( --seqera-black);
-        color: var( --seqera-black);
+        box-shadow: 0 1.5px 0 var(--seqera-black);
+        color: var(--seqera-black);
       }
       &:not(.active):hover {
         color: var(--primary);
         background-color: transparent;
-        box-shadow: 0 1.5px 0 var( --seqera-black);
-        color: var( --seqera-black);
+        box-shadow: 0 1.5px 0 var(--seqera-black);
+        color: var(--seqera-black);
       }
     }
   }
@@ -504,6 +498,9 @@ input:hover,
 .admin-controls .admin-actions {
   width: 100%;
   justify-content: right;
+}
+.header-dropdown-toggle.chat-header-icon .icon .chat-channel-unread-indicator {
+  background: #4256e7;
 }
 
 @media (max-width: 500px) {
@@ -818,9 +815,6 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 .sidebar-wrapper {
   background-color: var(--grey-neutral-white, #fff);
 }
-.has-sidebar-page .sidebar-wrapper {
-  border-right: 1px solid var(--primary-low);
-}
 
 .sidebar-more-section-links-details-summary,
 .sidebar-more-section-links-details,
@@ -837,7 +831,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   color: var(--functional-blue-6-primary, #4256e7);
 }
 .sidebar-section-link-wrapper .sidebar-section-link.active {
-  background-color: #E8E7E9;
+  background-color: #e8e7e9;
 }
 .sidebar-section-link-wrapper .sidebar-section-link.active .d-icon {
   color: var(--tertiary-hover);
@@ -853,14 +847,46 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   .sidebar-section-header-wrapper:hover {
   background: transparent;
 }
+/*Table*/
+.table-heading {
+  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  font-family: Degular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-bottom: 1px solid #cfd0d1;
+}
+.latest-topic-list-item .topic-stats {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+}
+.latest-topic-list .posts-map,
+.top-topic-list .posts-map {
+  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.topic-last-activity {
+  min-width: 145px;
+  & a {
+    color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
 
 /* Details */
 #create-topic.btn-default {
   border: 1px solid transparent;
   border-radius: 4px;
   background: var(--functional-blue-6-primary, #4256e7);
-  &:hover{
-    background: var(--functional-blue-9-hovered, #2C3999);
+  &:hover {
+    background: var(--functional-blue-9-hovered, #2c3999);
   }
   &.d-icon.d-icon-plus {
     display: none;
@@ -1164,7 +1190,7 @@ div.edit-category .edit-category-nav .nav-stacked,
   border: none;
 }
 .sidebar-wrapper .sidebar-sections {
-  --scrollbarThumbBg: var(--tertiary-200);
+  --scrollbarThumbBg: ##e8e7e9;
 }
 
 .sidebar-footer-wrapper .sidebar-footer-container:before {

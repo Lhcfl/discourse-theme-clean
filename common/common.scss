@@ -305,7 +305,8 @@ nav.post-controls .actions button {
 }
 
 .select-kit .select-kit-header:not(.btn),
-.list-controls .combo-box .combo-box-header {
+.list-controls .combo-box .combo-box-header,
+.select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
   border-radius: 4px;
   border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   background: var(--Grey-neutral-white, #fff);
@@ -316,6 +317,13 @@ nav.post-controls .actions button {
     color: #ffffff;
   }
 }
+// .select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
+//   color: var(--seqera-black, #160f26);
+//   &:hover {
+//     color: #fff;
+//   }
+// }
+
 /* Tag button */
 .select-kit-header.single-select-header.combo-box-header.tag-drop-header {
   border-radius: 4px;
@@ -1069,12 +1077,8 @@ div.edit-category .edit-category-title-bar {
   border: 1px solid var(--primary-low);
   border-radius: var(--ant-radius);
 }
-.category-drop-header {
-  &[data-value=""] {
-    color: var(--seqera-black, #160f26);
-  }
-}
-.select-kit.combo-box.tag-drop .tag-drop-header {
+.select-kit.combo-box.tag-drop .tag-drop-header,
+.select-kit.combo-box.tag-drop .selected-name {
   color: var(--seqera-black, #160f26);
 }
 /* Group */

@@ -35,7 +35,7 @@ th {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  color: var(--seqera-black, #160f26);
 }
 
 @mixin transition-300 {
@@ -311,6 +311,7 @@ nav.post-controls .actions button {
   border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   background: var(--Grey-neutral-white, #fff);
   text-transform: capitalize;
+  color: var(--seqera-black, #160f26);
   &:hover {
     border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   }
@@ -320,7 +321,6 @@ nav.post-controls .actions button {
   border-radius: 4px;
   background: var(--Purple-neutral-2, #e8e7e9);
   border: 0.5px solid var(--Purple-neutral-2, #e8e7e9);
-
   &:hover {
     border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   }
@@ -344,12 +344,6 @@ nav.post-controls .actions button {
 .select-kit .d-icon,
 .select-kit .select-kit-header .caret-icon {
   color: var(--primary-low-mid);
-}
-
-.select-kit .select-kit-header:not(.btn):hover,
-.list-controls .combo-box .combo-box-header:hover {
-  border: 1px solid var(--tertiary-800);
-  color: var(--tertiary);
 }
 
 .select-kit.multi-select.is-expanded .multi-select-header,
@@ -452,7 +446,6 @@ input:hover,
 /* Navigation */
 
 .nav-pills {
-  box-shadow: 0 3px 0 var(--primary-50);
   li {
     margin-bottom: 0;
     a,
@@ -464,12 +457,12 @@ input:hover,
       }
       &.active {
         background-color: transparent;
-        box-shadow: 0 3px 0 var(--d-nav-color--active);
+        box-shadow: 0 3px 0 var( --seqera-black);
       }
       &:not(.active):hover {
         color: var(--primary);
         background-color: transparent;
-        box-shadow: 0 3px 0 var(--d-nav-color--active);
+        box-shadow: 0 3px 0 var( --seqera-black);
       }
     }
   }
@@ -809,15 +802,18 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   scale: 1;
   border: none;
 }
+
 .d-header {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid #cfd0d1;
 }
 .btn.btn-sidebar-toggle:active {
   border: none;
 }
 
 /*   Sidebar   */
-
+.has-sidebar-page .sidebar-wrapper {
+  border-right: 1px solid #cfd0d1;
+}
 .sidebar-wrapper {
   background-color: var(--grey-neutral-white, #fff);
 }
@@ -831,6 +827,13 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   transition: all 0.5s;
   margin: 1px 10px 1px 10px;
   border-radius: 6px;
+  color: var(--seqera-black, #160f26);
+}
+.sidebar-section-link-wrapper
+  .sidebar-section-link
+  .sidebar-section-link-suffix.icon.unread
+  svg {
+  color: var(--functional-blue-6-primary, #4256e7);
 }
 .sidebar-section-link-wrapper .sidebar-section-link.active {
   background: var(--tertiary-100);
@@ -853,8 +856,15 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 
 /* Details */
 #create-topic.btn-default {
-  background: var(--tertiary);
   border: 1px solid transparent;
+  border-radius: 4px;
+  background: var(--functional-blue-6-primary, #4256e7);
+  &:hover{
+    background: var(--functional-blue-9-hovered, #2C3999);
+  }
+  &.d-icon.d-icon-plus {
+    display: none;
+  }
 }
 #create-topic.btn-default * {
   color: var(--secondary);

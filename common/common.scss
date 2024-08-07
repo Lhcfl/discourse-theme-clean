@@ -15,7 +15,7 @@
   --base-font: "Inter", sans-serif;
   --heading-font: "Degular", serif;
   --color-brand: #3498db;
-  --grey-neutral-white:#fff;
+  --grey-neutral-white: #fff;
   --sqr-econdary: #2980b9;
   --primary-300: #3498db;
   --tertiary-800: #3877e5;
@@ -307,9 +307,23 @@ nav.post-controls .actions button {
 
 .select-kit .select-kit-header:not(.btn),
 .list-controls .combo-box .combo-box-header {
-  border: 1px solid var(--primary-300);
-  border-radius: 6px;
-  transition: all 0.3s;
+  border-radius: 4px;
+  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  background: var(--Grey-neutral-white, #fff);
+  text-transform: capitalize;
+  &:hover {
+    border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  }
+}
+/* Tag button */
+.select-kit-header.single-select-header.combo-box-header.tag-drop-header.ember-view {
+  border-radius: 4px;
+  background: var(--Purple-neutral-2, #e8e7e9);
+  border: 0.5px solid var(--Purple-neutral-2, #e8e7e9);
+
+  &:hover {
+    border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  }
 }
 
 @media (min-width: 1000px) {
@@ -516,7 +530,7 @@ input:hover,
 
 /* content */
 .categories-and-latest .column.categories {
-  display:none;
+  display: none;
 }
 .boxed.admin-content {
   border: 1px solid var(--primary-low);
@@ -548,11 +562,15 @@ input:hover,
 
 /* Alert */
 .alert.alert-info {
-  border-radius: var(--ant-radius);
-  border: 1px solid var(--tertiary-800);
-  background-color: var(--tertiary-50);
+  background: var(--Brand-Nextflow-brand-2, #b6ece2);
+}
+#list-area .show-more {
+  position: relative;
 }
 
+#list-area .show-more .alert {
+  padding-left: 32px;
+}
 .alert.alert-info .btn-flat.close .d-icon {
   color: var(--primary-low-mid);
   transform: scale(0.7);
@@ -801,7 +819,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 /*   Sidebar   */
 
 .sidebar-wrapper {
-  background-color: var(--grey-neutral-white, #FFF);
+  background-color: var(--grey-neutral-white, #fff);
 }
 .has-sidebar-page .sidebar-wrapper {
   border-right: 1px solid var(--primary-low);

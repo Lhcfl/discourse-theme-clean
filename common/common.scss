@@ -330,7 +330,10 @@ nav.post-controls .actions button {
   background: var(--Purple-neutral-2, #e8e7e9);
   border: 0.5px solid var(--Purple-neutral-2, #e8e7e9);
   &:hover {
-    border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+    background-color:#160f26;
+  }
+  &:hover .selected-name{
+    color: #fff;
   }
 }
 
@@ -750,14 +753,15 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   border-radius: 100%;
   background: rgba(var(--tertiary-rgb), 0.2);
 }
+
 .drop-down-mode .d-header-icons .active .icon > .d-icon {
   color: var(--header_primary);
 }
 .drop-down-mode .d-header-icons .active .icon:after {
   display: none;
 }
-.discourse-no-touch .drop-down-mode .d-header-icons .active .icon:hover {
-  background: rgba(var(--tertiary-rgb), 0.2);
+.discourse-no-touch .drop-down-mode .d-header-icons .icon:hover {
+  background-color: #e8e7e9;
 }
 .discourse-no-touch .d-header-icons .icon:hover,
 .discourse-no-touch .d-header-icons .icon:focus {

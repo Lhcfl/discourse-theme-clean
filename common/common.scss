@@ -48,8 +48,9 @@ th {
 .btn-large,
 .btn-small,
 .btn-primary {
-  border: 1px solid var(--btn-default-border);
-  box-shadow: var(--btn-box-shadow);
+  border-radius: 4px;
+  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160F26);
+  background: var(--Grey-neutral-white, #FFF);
 }
 
 @mixin make-btn-border-and-d-icon(
@@ -458,11 +459,13 @@ input:hover,
       &.active {
         background-color: transparent;
         box-shadow: 0 3px 0 var( --seqera-black);
+        color: var( --seqera-black);
       }
       &:not(.active):hover {
         color: var(--primary);
         background-color: transparent;
         box-shadow: 0 3px 0 var( --seqera-black);
+        color: var( --seqera-black);
       }
     }
   }
@@ -868,9 +871,6 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 }
 #create-topic.btn-default * {
   color: var(--secondary);
-}
-#create-topic.btn-default:hover {
-  background: var(--tertiary-hover);
 }
 .mobile-view .group-details-after-outlet.invite {
   margin-top: 8px;

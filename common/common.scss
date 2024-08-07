@@ -1,4 +1,3 @@
-@import "./variables"; 
 :root {
   --btn-default-border: var(--primary-300);
   --btn-default-hover: var(--tertiary-800);
@@ -12,6 +11,22 @@
   --small-shadow: 0 3px 8px 0 rgb(0, 0, 0, 0.08);
   --float-btn-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
     0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+  // _variables.scss
+
+  // Colours
+  $primary-color: #3498db;
+  $secondary-color: #2980b9;
+  $background-color: #f8f9fa;
+  $sqr-black-color: #160f26;
+  $--Brand-Seqera-brand-Seqera-brand: #160f26;
+
+  // Tipography
+  $base-font: "Inter", sans-serif;
+  $heading-font: "Degular", serif;
+
+  // Spacing
+  $base-spacing: 16px;
 }
 * {
   font-family: var($base-font), Helvetica, sans-serif;

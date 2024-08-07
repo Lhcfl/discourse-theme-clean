@@ -106,43 +106,43 @@ th {
     background-color: $v-bg-color;
   }
 
-  .discourse-no-touch &:hover,
-  .discourse-no-touch &.btn-hover,
-  &:focus {
-    @include make-btn-border-and-d-icon(
-      $v-border-color-hover,
-      $v-bg-color-hover,
-      $v-text-color-hover
-    );
-  }
-  &:active,
-  &.btn-active {
-    @include make-btn-border-and-d-icon(
-      $v-border-color-active,
-      $v-bg-color,
-      $v-text-color
-    );
-  }
-  .disabled,
-  [disabled] {
-    opacity: 0.6;
-    @include make-btn-border-and-d-icon(
-      $v-border-color,
-      $v-bg-color,
-      $v-text-color
-    );
-    &:hover,
-    &:active,
-    &.btn-hover,
-    &.btn-active {
-      background: transparent;
-      @include make-btn-border-and-d-icon(
-        $v-border-color,
-        $v-bg-color,
-        $v-text-color
-      );
-    }
-  }
+  // .discourse-no-touch &:hover,
+  // .discourse-no-touch &.btn-hover,
+  // &:focus {
+  //   @include make-btn-border-and-d-icon(
+  //     $v-border-color-hover,
+  //     $v-bg-color-hover,
+  //     $v-text-color-hover
+  //   );
+  // }
+  // &:active,
+  // &.btn-active {
+  //   @include make-btn-border-and-d-icon(
+  //     $v-border-color-active,
+  //     $v-bg-color,
+  //     $v-text-color
+  //   );
+  // }
+  // .disabled,
+  // [disabled] {
+  //   opacity: 0.6;
+  //   @include make-btn-border-and-d-icon(
+  //     $v-border-color,
+  //     $v-bg-color,
+  //     $v-text-color
+  //   );
+  //   &:hover,
+  //   &:active,
+  //   &.btn-hover,
+  //   &.btn-active {
+  //     background: transparent;
+  //     @include make-btn-border-and-d-icon(
+  //       $v-border-color,
+  //       $v-bg-color,
+  //       $v-text-color
+  //     );
+  //   }
+  // }
 }
 
 .btn {
@@ -255,6 +255,27 @@ nav.post-controls .actions button {
   border: 1px solid transparent;
   background: var(--tertiary-100);
   border-radius: var(--ant-radius);
+}
+
+.heatmap-high,
+.heatmap-high a,
+.heatmap-high .d-icon,
+.heatmap-high .d-button-label {
+  color: #3D95FD !important;
+}
+
+.heatmap-med,
+.heatmap-med a,
+.heatmap-med .d-icon,
+.heatmap-med .d-button-label {
+  color: #3787E5 !important;
+}
+
+.heatmap-low,
+.heatmap-low a,
+.heatmap-low .d-icon,
+.heatmap-low .d-button-label {
+  color: #3074C5 !important;
 }
 
 .btn-flat.show-replies {
@@ -767,7 +788,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 .drop-down-mode .d-header-icons .active .icon:after {
   display: none;
 }
-.discourse-no-touch .drop-down-mode .d-header-icons .icon:hover {
+.discourse-no-touch .drop-down-mode .d-header-icons .icon:hover:not(#toggle-current-user) {
   background-color: #e8e7e9;
 }
 .discourse-no-touch .d-header-icons .icon:hover,

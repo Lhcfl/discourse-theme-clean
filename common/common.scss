@@ -59,7 +59,6 @@ th {
   background: var(--Grey-neutral-white, #fff);
   &:hover {
     border-radius: 4px;
-    border: 1px solid var(--OLD-Secondary-Secondary-1, #6f757b);
     background: var(--Grey-neutral-white, #fff);
     color: #fff;
   }
@@ -502,6 +501,7 @@ input:hover,
 
 /* Navigation */
 
+.more-topics__container .nav-pills,
 .nav-pills {
   li {
     margin-bottom: 0;

@@ -338,19 +338,19 @@ nav.post-controls .actions button {
   border-radius: var(--ant-radius);
 }
 
-.select-kit .select-kit-header:not(.btn),
-.list-controls .combo-box .combo-box-header,
-.select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
-  border-radius: 4px;
-  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
-  background: var(--Grey-neutral-white, #fff);
-  text-transform: capitalize;
-  color: var(--seqera-black, #160f26);
-  &:hover {
-    background: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
-    color: #ffffff;
-  }
-}
+// .select-kit .select-kit-header:not(.btn),
+// .list-controls .combo-box .combo-box-header,
+// .select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
+//   border-radius: 4px;
+//   border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+//   background: var(--Grey-neutral-white, #fff);
+//   text-transform: capitalize;
+//   color: var(--seqera-black, #160f26);
+//   &:hover {
+//     background: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+//     color: #ffffff;
+//   }
+// }
 // .select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
 //   color: var(--seqera-black, #160f26);
 //   &:hover {
@@ -503,7 +503,7 @@ input:hover,
 
 .more-topics__container .nav-pills,
 .nav-pills {
-  .nav li {
+  li {
     margin-bottom: 0;
     a,
     button {
@@ -620,6 +620,13 @@ input:hover,
   background: var(--Brand-Nextflow-brand-2, #b6ece2);
   &.clickable {
     color: #160f26;
+  }
+}
+.post-notice{
+  background: var(--Brand-Nextflow-brand-2, #b6ece2);
+  justify-content: center;
+  & .d-icon{
+    display: none;
   }
 }
 #list-area .show-more {
@@ -758,33 +765,33 @@ nav.post-controls .actions .double-button button:last-child {
   border-bottom-right-radius: var(--ant-radius);
 }
 
-nav.post-controls .actions > button.edit:last-child,
-nav.post-controls .actions > button.reply:last-child {
-  border: 1px solid var(--tertiary-800);
-  background: var(--secondary); // Corregido --seecondary a --secondary
-  box-shadow: var(--btn-box-shadow);
-  opacity: 1;
-  transition: all 0.3s;
-}
-nav.post-controls .actions > button.edit:last-child:hover,
-nav.post-controls .actions > button.reply:last-child:hover {
-  background: var(--tertiary-hover);
-  border: 1px solid var(--tertiary);
-}
-nav.post-controls .actions > button.edit:last-child:active,
-nav.post-controls .actions > button.reply:last-child:active {
-  scale: 0.95;
-}
-nav.post-controls .actions > button.edit:last-child *,
-nav.post-controls .actions > button.reply:last-child * {
-  color: var(--tertiary-800);
-  font-size: 90%;
-  transition: all 0.3s;
-}
-nav.post-controls .actions > button.edit:last-child:hover *,
-nav.post-controls .actions > button.reply:last-child:hover * {
-  color: var(--secondary);
-}
+// nav.post-controls .actions > button.edit:last-child,
+// nav.post-controls .actions > button.reply:last-child {
+//   border: 1px solid var(--tertiary-800);
+//   background: var(--secondary); // Corregido --seecondary a --secondary
+//   box-shadow: var(--btn-box-shadow);
+//   opacity: 1;
+//   transition: all 0.3s;
+// }
+// nav.post-controls .actions > button.edit:last-child:hover,
+// nav.post-controls .actions > button.reply:last-child:hover {
+//   background: var(--tertiary-hover);
+//   border: 1px solid var(--tertiary);
+// }
+// nav.post-controls .actions > button.edit:last-child:active,
+// nav.post-controls .actions > button.reply:last-child:active {
+//   scale: 0.95;
+// }
+// nav.post-controls .actions > button.edit:last-child *,
+// nav.post-controls .actions > button.reply:last-child * {
+//   color: var(--tertiary-800);
+//   font-size: 90%;
+//   transition: all 0.3s;
+// }
+// nav.post-controls .actions > button.edit:last-child:hover *,
+// nav.post-controls .actions > button.reply:last-child:hover * {
+//   color: var(--secondary);
+// }
 
 .discourse-no-touch
   .discourse-reactions-actions:not(.has-reacted):not(.my-post)

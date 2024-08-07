@@ -1,3 +1,4 @@
+@import "../_variables";
 :root {
   --btn-default-border: var(--primary-300);
   --btn-default-hover: var(--tertiary-800);
@@ -12,10 +13,21 @@
   --float-btn-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
     0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
 }
+* {
+  font-family: var($base-font), Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
-    helvetica neue, Arial, noto sans, sans-serif;
+  color: var(--color-brand);
+}
+
+th {
+  font-family: var($heading-font), Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
 }
 
 @mixin transition-300 {

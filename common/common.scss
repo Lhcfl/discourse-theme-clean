@@ -15,7 +15,8 @@
   --base-font: "Inter", sans-serif;
   --heading-font: "Degular", serif;
   --color-brand: #3498db;
-  --secondary: #2980b9;
+  --grey-neutral-white:#fff;
+  --sqr-econdary: #2980b9;
   --primary-300: #3498db;
   --tertiary-800: #3877e5;
   --seqera-black: #160f26;
@@ -27,7 +28,6 @@
 }
 
 body {
-  color: var(--color-brand);
 }
 
 th {
@@ -798,7 +798,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 /*   Sidebar   */
 
 .sidebar-wrapper {
-  background-color: var(--secondary);
+  background-color: var(--grey-neutral-white, #FFF);
 }
 .has-sidebar-page .sidebar-wrapper {
   border-right: 1px solid var(--primary-low);

@@ -11,25 +11,18 @@
   --small-shadow: 0 3px 8px 0 rgb(0, 0, 0, 0.08);
   --float-btn-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
     0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
-
-  // _variables.scss
-
-  // Colours
-  $primary-color: #3498db;
-  $secondary-color: #2980b9;
-  $background-color: #f8f9fa;
-  $sqr-black-color: #160f26;
-  $--Brand-Seqera-brand-Seqera-brand: #160f26;
-
-  // Tipography
-  $base-font: "Inter", sans-serif;
-  $heading-font: "Degular", serif;
-
-  // Spacing
-  $base-spacing: 16px;
+  /*   SQR vars   */
+  --base-font: "Inter", sans-serif;
+  --heading-font: "Degular", serif;
+  --color-brand: #3498db;
+  --secondary: #2980b9;
+  --primary-300: #3498db;
+  --tertiary-800: #3877e5;
+  --seqera-black: #160f26;
 }
+
 * {
-  font-family: var($base-font), Helvetica, sans-serif;
+  font-family: var(--base-font), Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -38,7 +31,7 @@ body {
 }
 
 th {
-  font-family: var($heading-font), Helvetica, sans-serif;
+  font-family: var(--heading-font), Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -49,7 +42,7 @@ th {
   transition: all 0.3s;
 }
 
-/* 全局 按钮 Global button */
+/* Global button */
 .docker-manager .btn,
 .btn-default,
 .btn-large,
@@ -689,7 +682,7 @@ nav.post-controls .actions .double-button button:last-child {
 nav.post-controls .actions > button.edit:last-child,
 nav.post-controls .actions > button.reply:last-child {
   border: 1px solid var(--tertiary-800);
-  background: var(--seecondary);
+  background: var(--secondary); // Corregido --seecondary a --secondary
   box-shadow: var(--btn-box-shadow);
   opacity: 1;
   transition: all 0.3s;
@@ -776,7 +769,6 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   animation: 0.3s panel-drop-down;
 }
 
-.d-header-icons .icon > .d-icon,
 .d-header-icons .icon > .d-icon {
   color: var(--header_primary-very-high);
   scale: 0.7;
@@ -830,7 +822,6 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 .sidebar-section-wrapper .sidebar-section-header-wrapper {
   transition: all 0.5s;
   margin: 1px 10px 1px 10px;
-  /*         border-bottom: 1px solid var(--primary-low); */
   color: var(--primary-low);
 }
 .discourse-no-touch
@@ -839,7 +830,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   background: transparent;
 }
 
-/* 细节 */
+/* Details */
 #create-topic.btn-default {
   background: var(--tertiary);
   border: 1px solid transparent;

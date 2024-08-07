@@ -53,7 +53,11 @@ th {
   background: var(--Grey-neutral-white, #fff);
 }
 
-@mixin make-btn-border-and-d-icon($border-color: 0, $bg-color: 0, $text-color: 0) {
+@mixin make-btn-border-and-d-icon(
+  $border-color: 0,
+  $bg-color: 0,
+  $text-color: 0
+) {
   @if $border-color != 0 {
     border: 1px solid $border-color;
   }
@@ -308,7 +312,8 @@ nav.post-controls .actions button {
   text-transform: capitalize;
   color: var(--seqera-black, #160f26);
   &:hover {
-    border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+    background: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+    color: #ffffff;
   }
 }
 /* Tag button */
@@ -324,7 +329,7 @@ nav.post-controls .actions button {
 @media (min-width: 1000px) {
   .select-kit .select-kit-header:not(.btn),
   .list-controls .combo-box .combo-box-header {
-    min-width: 120px;
+    // min-width: 120px;
   }
   .sidebar-wrapper .select-kit .select-kit-header:not(.btn),
   .sidebar-wrapper .list-controls .combo-box .combo-box-header {
@@ -851,7 +856,10 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   background: transparent;
 }
 /*Table*/
-.table-heading {
+.table-heading,
+.latest-topic-list .table-heading,
+.top-topic-list .table-heading,
+table th {
   color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   font-family: Degular;
   font-size: 16px;
@@ -867,7 +875,9 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   justify-content: flex-end;
 }
 .latest-topic-list .posts-map,
-.top-topic-list .posts-map {
+.top-topic-list .posts-map,
+.topic-list .num .badge-posts,
+.topic-list td {
   color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   font-size: 16px;
   font-style: normal;
@@ -875,12 +885,18 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 }
 .topic-last-activity {
   min-width: 145px;
-  & a {
-    color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-  }
+}
+.latest-topic-list-item .topic-last-activity a {
+  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.topic-list .topic-list-item-separator .topic-list-data {
+  border-top: #160f26;
+}
+.topic-list .topic-list-item-separator .topic-list-data span {
+  color: #160f26;
 }
 
 /* Details */
@@ -1053,7 +1069,14 @@ div.edit-category .edit-category-title-bar {
   border: 1px solid var(--primary-low);
   border-radius: var(--ant-radius);
 }
-
+.category-drop-header {
+  &[data-value=""] {
+    color: var(--seqera-black, #160f26);
+  }
+}
+.select-kit.combo-box.tag-drop .tag-drop-header {
+  color: var(--seqera-black, #160f26);
+}
 /* Group */
 .groups-boxes .group-box {
   border-radius: var(--ant-radius);

@@ -20,6 +20,7 @@
   --primary-300: #3498db;
   --tertiary-800: #3877e5;
   --seqera-black: #160f26;
+  --seqera-bg-grey: #e8e7e9;
 
   /* Overwritting*/
   --primary-high-or-secondary-low: #160f26;
@@ -33,7 +34,9 @@
 
 body {
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font), Helvetica, sans-serif;
+}
 th {
   font-family: var(--heading-font), Helvetica, sans-serif;
   font-size: 16px;
@@ -50,11 +53,16 @@ th {
 .docker-manager .btn,
 .btn-default,
 .btn-large,
-.btn-small,
-.btn-primary {
+.btn-small {
   border-radius: 4px;
   border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   background: var(--Grey-neutral-white, #fff);
+  &:hover {
+    border-radius: 4px;
+    border: 1px solid var(--OLD-Secondary-Secondary-1, #6f757b);
+    background: var(--Grey-neutral-white, #fff);
+    color: #fff;
+  }
 }
 
 @mixin make-btn-border-and-d-icon(
@@ -299,7 +307,7 @@ nav.post-controls .actions button {
 .discourse-no-touch .composer-controls .btn:focus {
   background-color: transparent;
 }
-.open .grippie{
+.open .grippie {
   background: transparent;
 }
 .fk-d-menu {
@@ -431,7 +439,6 @@ nav.post-controls .actions button {
   outline: 2px solid var(--tertiary);
   outline-offset: -2px;
   border: 1px solid #d0cfd4;
-
 }
 
 textarea:focus,
@@ -858,7 +865,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   border-radius: 0;
 }
 .user-menu.revamped .tabs-list .btn.active {
-  background: var(--tertiary-300);
+  background: var(--seqera-bg-grey);
 }
 .user-menu.revamped .tabs-list .btn:active {
   scale: 1;
@@ -958,7 +965,8 @@ table th {
 
 /* Details */
 #create-topic.btn-default,
-.btn-primary {
+.btn-primary,
+.discourse-no-touch .btn-primary {
   border: 1px solid transparent;
   border-radius: 4px;
   background: var(--functional-blue-6-primary, #4256e7);

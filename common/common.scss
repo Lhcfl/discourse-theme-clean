@@ -58,12 +58,9 @@ th {
   $bg-color: 0,
   $text-color: 0
 ) {
-  @if $border-color != 0 {
-    border: 1px solid $border-color;
-    box-shadow: var(--btn-box-shadow);
-  }
+
   @if $bg-color != 0 {
-    background: $bg-color;
+    background-color: #E8E7E9;
   }
   @if $text-color != 0 {
     color: $text-color;
@@ -237,7 +234,7 @@ nav.post-controls .actions button {
 .user-notifications.select-kit .select-kit-header,
 .pinned-options.select-kit .select-kit-header,
 .notifications-button.select-kit .select-kit-header {
-  border: 1px solid var(--primary-300);
+  border: none;
 }
 .notifications-button.select-kit .select-kit-header .d-icon-d-watching {
   color: var(--tertiary-800);
@@ -458,13 +455,13 @@ input:hover,
       }
       &.active {
         background-color: transparent;
-        box-shadow: 0 3px 0 var( --seqera-black);
+        box-shadow: 0 1.5px 0 var( --seqera-black);
         color: var( --seqera-black);
       }
       &:not(.active):hover {
         color: var(--primary);
         background-color: transparent;
-        box-shadow: 0 3px 0 var( --seqera-black);
+        box-shadow: 0 1.5px 0 var( --seqera-black);
         color: var( --seqera-black);
       }
     }
@@ -751,7 +748,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 }
 .discourse-no-touch .d-header-icons .icon:hover,
 .discourse-no-touch .d-header-icons .icon:focus {
-  border-radius: 100%;
+  border: 1px solid transparent;
   background: transparent;
 }
 
@@ -808,6 +805,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
 
 .d-header {
   border-bottom: 1px solid #cfd0d1;
+  box-shadow: none;
 }
 .btn.btn-sidebar-toggle:active {
   border: none;
@@ -839,8 +837,7 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   color: var(--functional-blue-6-primary, #4256e7);
 }
 .sidebar-section-link-wrapper .sidebar-section-link.active {
-  background: var(--tertiary-100);
-  color: var(--tertiary-hover);
+  background-color: #E8E7E9;
 }
 .sidebar-section-link-wrapper .sidebar-section-link.active .d-icon {
   color: var(--tertiary-hover);

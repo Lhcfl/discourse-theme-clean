@@ -20,6 +20,10 @@
   --primary-300: #3498db;
   --tertiary-800: #3877e5;
   --seqera-black: #160f26;
+
+  /* Overwritting*/
+  --primary-high-or-secondary-low:#160f26;
+  --tertiary-high:#160f26;
 }
 
 * {
@@ -572,6 +576,9 @@ input:hover,
 /* Alert */
 .alert.alert-info {
   background: var(--Brand-Nextflow-brand-2, #b6ece2);
+  &.clickable{
+    color: #160f26;
+  }
 }
 #list-area .show-more {
   position: relative;

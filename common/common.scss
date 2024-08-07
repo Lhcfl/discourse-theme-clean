@@ -389,7 +389,7 @@ nav.post-controls .actions button {
 .select-kit.single-select.is-expanded .select-kit-header:not(.btn),
 .select-kit.single-select .select-kit-header:not(.btn):focus,
 .select-kit.single-select .select-kit-header:not(.btn):active {
-  border: 1px solid var(--tertiary-800);
+  border: none;
   outline: none;
 }
 
@@ -436,6 +436,7 @@ nav.post-controls .actions button {
 
 textarea:focus,
 .search-menu .search-input:focus-within,
+textarea:focus-within,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="datetime"]:focus,
@@ -956,14 +957,15 @@ table th {
 }
 
 /* Details */
-#create-topic.btn-default {
+#create-topic.btn-default,
+.btn-primary {
   border: 1px solid transparent;
   border-radius: 4px;
   background: var(--functional-blue-6-primary, #4256e7);
   &:hover {
     background: var(--functional-blue-9-hovered, #2c3999);
   }
-  &.d-icon.d-icon-plus {
+  & .d-icon.d-icon-plus {
     display: none;
   }
 }

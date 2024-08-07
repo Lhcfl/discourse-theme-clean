@@ -53,9 +53,12 @@ th {
   background: var(--Grey-neutral-white, #fff);
 }
 
-@mixin make-btn-border-and-d-icon($bg-color: 0, $text-color: 0) {
+@mixin make-btn-border-and-d-icon($border-color: 0, $bg-color: 0, $text-color: 0) {
+  @if $border-color != 0 {
+    border: 1px solid $border-color;
+  }
   @if $bg-color != 0 {
-    background-color: #e8e7e9;
+    background-color: $bg-color;
   }
   @if $text-color != 0 {
     color: $text-color;

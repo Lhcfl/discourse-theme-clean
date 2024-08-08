@@ -75,11 +75,11 @@ a.title {
     color: #fff;
   }
 }
-.discourse-no-touch .btn:hover{
-  background: #E8E7E9;
+.discourse-no-touch .btn:hover {
+  background: #e8e7e9;
   color: inherit;
   & svg {
-    color: inherit!important;
+    color: inherit !important;
   }
 }
 
@@ -993,7 +993,7 @@ tbody {
   font-weight: 400;
 }
 .topic-list .topic-list-item-separator .topic-list-data {
- border-top: 1px solid #4256e7;
+  border-top: 1px solid #4256e7;
 }
 .topic-list .topic-list-item-separator .topic-list-data span {
   color: #4256e7;
@@ -1353,7 +1353,7 @@ div.edit-category .edit-category-nav .nav-stacked,
 .btn.btn-icon,
 .btn-default {
   border-radius: 4px;
-  &:hover{
+  &:hover {
     background-color: var(--seqera-grey-bg);
   }
   &:hover svg {
@@ -1371,11 +1371,22 @@ div.edit-category .edit-category-nav .nav-stacked,
   color: var(--secondary);
 }
 
-.badge-notification.unread-posts {
+.badge-notification.unread-posts,
+.badge-notification {
   background-color: #4256e7;
 }
 
-.chat-emoji-picker__filter.dc-filter-input-container {
+.user-menu .quick-access-panel li.unread,
+.user-menu .quick-access-panel li.pending,
+.user-notifications-list li.unread,
+.user-notifications-list
+  li.pending{
+    background-color: #EAE8F1;
+  }
+#quick-access-all-notifications .user-menu-button-all-notifications li a {
+  color: var(--seqera-black);
+  }
+  .chat-emoji-picker__filter.dc-filter-input-container {
   border-radius: var(--ant-radius);
   background: var(--secondary);
   border: 1px solid var(--primary-300);

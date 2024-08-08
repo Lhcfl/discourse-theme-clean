@@ -50,7 +50,7 @@ th {
   font-weight: 600;
   color: var(--seqera-black, #160f26);
 }
-a.title{
+a.title {
   font-size: 16px;
   &.visited {
     color: inherit;
@@ -511,7 +511,7 @@ input:hover,
   border: 1px solid #bdbdbd;
   border-radius: 4px;
   padding: 10px;
-} 
+}
 
 .search-menu .search-input {
   background: #f3f3f4;
@@ -959,7 +959,7 @@ table th span {
   line-height: normal;
   border-bottom: 1px solid #cfd0d1;
 }
-tbody{
+tbody {
   border-top: none;
 }
 .latest-topic-list-item .topic-stats {
@@ -987,10 +987,10 @@ tbody{
   font-weight: 400;
 }
 .topic-list .topic-list-item-separator {
-  border-top: #4256E7;
+  border-top: #4256e7;
 }
 .topic-list .topic-list-item-separator .topic-list-data span {
-  color: #4256E7;
+  color: #4256e7;
 }
 .timeline-container .topic-timeline .timeline-scrollarea {
   border-left: 1px solid #c6ccf8;
@@ -1301,15 +1301,15 @@ div.edit-category .edit-category-nav .nav-stacked,
 .reply-where-modal .btn.btn-reply-where__cancel:hover {
   background: transparent;
 }
-#reply-control .save-or-cancel .cancel{
-    color: #DC3545;
-    border: 1px solid #DC3545;
-    border-radius: 4px;
-    padding: 8px 16px;
-    &:hover{
-      background-color:#DC3545;
-      color:#fff;
-    }
+#reply-control .save-or-cancel .cancel {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  padding: 8px 16px;
+  &:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
 }
 
 .sidebar-footer-wrapper .sidebar-footer-container {
@@ -1347,6 +1347,8 @@ div.edit-category .edit-category-nav .nav-stacked,
   border-radius: 4px;
   &:hover{
     background-color: var(--seqera-grey-bg);
+  }
+  &:hover span {
     color: var(--seqera-black);
   }
 }

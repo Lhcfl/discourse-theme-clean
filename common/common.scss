@@ -50,6 +50,12 @@ th {
   font-weight: 600;
   color: var(--seqera-black, #160f26);
 }
+a.title{
+  font-size: 16px;
+  &.visited {
+    color: inherit;
+  }
+}
 
 @mixin transition-300 {
   transition: all 0.3s;
@@ -1316,6 +1322,13 @@ div.edit-category .edit-category-nav .nav-stacked,
 }
 .btn.btn-danger.btn-icon:not(:hover) * {
   color: var(--danger);
+}
+.btn.btn-icon {
+  border-radius: 4px;
+  &:hover{
+    background-color: var(--seqera-grey-bg);
+    color: #fff;
+  }
 }
 
 .emoji-picker {

@@ -76,8 +76,11 @@ a.title {
   }
 }
 .discourse-no-touch .btn:hover{
-  background: var(--Grey-neutral-white, #fff);
+  background: #E8E7E9;
   color: inherit;
+  & svg {
+    color: inherit!important;
+  }
 }
 
 @mixin make-btn-border-and-d-icon(
@@ -1010,6 +1013,7 @@ tbody {
   background: var(--functional-blue-6-primary, #4256e7);
   &:hover {
     background: var(--functional-blue-9-hovered, #2c3999);
+    color: #fff;
   }
   & .d-icon.d-icon-plus {
     display: none;

@@ -949,6 +949,7 @@ nav.post-controls .actions .double-button button:last-child {
 .table-heading,
 .latest-topic-list .table-heading,
 .top-topic-list .table-heading,
+.topic-list-header,
 table th span {
   color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   font-family: Degular;
@@ -957,6 +958,9 @@ table th span {
   font-weight: 600;
   line-height: normal;
   border-bottom: 1px solid #cfd0d1;
+}
+tbody{
+  border-top: none;
 }
 .latest-topic-list-item .topic-stats {
   display: flex;
@@ -982,11 +986,11 @@ table th span {
   font-style: normal;
   font-weight: 400;
 }
-.topic-list .topic-list-item-separator .topic-list-data {
-  border-top: #160f26;
+.topic-list .topic-list-item-separator {
+  border-top: #4256E7;
 }
 .topic-list .topic-list-item-separator .topic-list-data span {
-  color: #160f26;
+  color: #4256E7;
 }
 .timeline-container .topic-timeline .timeline-scrollarea {
   border-left: 1px solid #c6ccf8;

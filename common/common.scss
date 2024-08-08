@@ -75,6 +75,10 @@ a.title {
     color: #fff;
   }
 }
+.discourse-no-touch .btn:hover{
+  background: var(--Grey-neutral-white, #fff);
+  color: inherit;
+}
 
 @mixin make-btn-border-and-d-icon(
   $border-color: 0,
@@ -949,8 +953,7 @@ nav.post-controls .actions .double-button button:last-child {
 .table-heading,
 .latest-topic-list .table-heading,
 .top-topic-list .table-heading,
-.topic-list-header,
-table th span {
+.topic-list-header {
   color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
   font-family: Degular;
   font-size: 16px;
@@ -986,8 +989,8 @@ tbody {
   font-style: normal;
   font-weight: 400;
 }
-.topic-list .topic-list-item-separator {
-  border-top: #4256e7;
+.topic-list .topic-list-item-separator .topic-list-data {
+ border-top: 1px solid #4256e7;
 }
 .topic-list .topic-list-item-separator .topic-list-data span {
   color: #4256e7;
@@ -1343,13 +1346,14 @@ div.edit-category .edit-category-nav .nav-stacked,
 .btn.btn-danger.btn-icon:not(:hover) * {
   color: var(--danger);
 }
-.btn.btn-icon {
+.btn.btn-icon,
+.btn-default {
   border-radius: 4px;
   &:hover{
     background-color: var(--seqera-grey-bg);
   }
-  &:hover span {
-    color: var(--seqera-black);
+  &:hover svg {
+    color: inherit;
   }
 }
 

@@ -35,6 +35,9 @@
 
 body {
 }
+a {
+  color: var(--seqera-blue-primary);
+}
 h1,
 h2,
 h3,
@@ -65,6 +68,7 @@ a.title {
 .docker-manager .btn,
 .btn-default,
 .btn-large,
+.btn.no-text,
 .btn-small {
   border-radius: 4px;
   border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
@@ -1373,20 +1377,19 @@ div.edit-category .edit-category-nav .nav-stacked,
 
 .badge-notification.unread-posts,
 .badge-notification {
-  background-color: #4256e7;
+  background-color: #4256e7 !important;
 }
 
 .user-menu .quick-access-panel li.unread,
 .user-menu .quick-access-panel li.pending,
 .user-notifications-list li.unread,
-.user-notifications-list
-  li.pending{
-    background-color: #EAE8F1;
-  }
+.user-notifications-list li.pending {
+  background-color: #eae8f1;
+}
 #quick-access-all-notifications .user-menu-button-all-notifications li a {
   color: var(--seqera-black);
-  }
-  .chat-emoji-picker__filter.dc-filter-input-container {
+}
+.chat-emoji-picker__filter.dc-filter-input-container {
   border-radius: var(--ant-radius);
   background: var(--secondary);
   border: 1px solid var(--primary-300);

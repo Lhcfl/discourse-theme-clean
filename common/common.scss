@@ -344,25 +344,25 @@ nav.post-controls .actions button {
   border-radius: var(--ant-radius);
 }
 
-// .select-kit .select-kit-header:not(.btn),
-// .list-controls .combo-box .combo-box-header,
-// .select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
-//   border-radius: 4px;
-//   border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
-//   background: var(--Grey-neutral-white, #fff);
-//   text-transform: capitalize;
-//   color: var(--seqera-black, #160f26);
-//   &:hover {
-//     background: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
-//     color: #ffffff;
-//   }
-// }
-// .select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
-//   color: var(--seqera-black, #160f26);
-//   &:hover {
-//     color: #fff;
-//   }
-// }
+.select-kit .select-kit-header:not(.btn),
+.list-controls .combo-box .combo-box-header,
+.select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
+  border-radius: 4px;
+  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  background: var(--Grey-neutral-white, #fff);
+  text-transform: capitalize;
+  color: var(--seqera-black, #160f26);
+  &:hover {
+    background: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+    color: #ffffff;
+  }
+}
+.select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
+  color: var(--seqera-black, #160f26);
+  &:hover {
+    color: #fff;
+  }
+}
 
 /* Tag button */
 .select-kit-header.single-select-header.combo-box-header.tag-drop-header {

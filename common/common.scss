@@ -1032,7 +1032,11 @@ tbody {
 .topic-list .topic-list-item-separator .topic-list-data {
   border-top: 1px solid #4256e7;
 }
-.topic-list .topic-list-item-separator .topic-list-data span {
+.small-action.topic-post-visited .topic-post-visited-line{
+  border-bottom: 1px solid #4256e7;
+}
+.topic-list .topic-list-item-separator .topic-list-data span,
+.small-action.topic-post-visited .topic-post-visited-line .topic-post-visited-message {
   color: #4256e7;
 }
 .timeline-container .topic-timeline .timeline-scrollarea {
@@ -1219,7 +1223,6 @@ tbody {
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
   margin: 0px auto 25px;
   max-width: 70%;
   gap: 20px;

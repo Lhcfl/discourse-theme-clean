@@ -40,6 +40,9 @@ a {
   &:visited {
     color: var(--seqera-blue-primary);
   }
+  &:hover {
+    color: #2c3999;
+  }
 }
 h1,
 h2,
@@ -515,6 +518,12 @@ input:hover,
   transition: all 0.3s;
   border-radius: 4px;
 }
+.search-menu .search-link:focus,
+.search-menu .search-link:hover,
+.search-menu-container .search-link:focus,
+.search-menu-container .search-link:hover {
+  background-color: #e8e7e9;
+}
 
 .discourse-no-touch .d-editor-textarea-wrapper textarea:hover {
   border: none !important;
@@ -948,6 +957,19 @@ nav.post-controls .actions .double-button button:last-child {
 .sidebar-section-link-wrapper .sidebar-section-link.active .d-icon {
   color: var(--tertiary-hover);
 }
+.sidebar-section.sidebar-section-wrapper.sidebar-section--collapsed:hover svg {
+  color: var(--seqera-black);
+}
+.discourse-no-touch
+  .sidebar-section-wrapper
+  .sidebar-section-header-wrapper
+  .sidebar-section-header-button:hover {
+  background: #e8e7e9;
+  border-radius: 4px;
+  & svg {
+    color: var(--seqera-black);
+  }
+}
 
 .sidebar-section-wrapper .sidebar-section-header-wrapper {
   transition: all 0.5s;
@@ -972,6 +994,10 @@ nav.post-controls .actions .double-button button:last-child {
   line-height: normal;
   border-bottom: 1px solid #cfd0d1;
 }
+.topic-list-item,
+tr {
+  border-bottom: none;
+}
 tbody {
   border-top: none;
 }
@@ -989,6 +1015,9 @@ tbody {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+.latest-topic-list-item.visited a.title:not(.badge-notification) {
+  color: var(--seqera-black, #160f26);
 }
 .topic-last-activity {
   min-width: 145px;
@@ -1379,9 +1408,14 @@ div.edit-category .edit-category-nav .nav-stacked,
 }
 
 .badge-notification.unread-posts,
-.badge-notification,
+.badge-notification:before,
+.c-footer__item .c-unread-indicator,
+.user-menu.revamped .tabs-list .btn .badge-notification,
 .chat-channel-row .chat-channel__metadata .chat-channel-unread-indicator {
   background-color: #4256e7 !important;
+}
+.post-info.post-date .read-state {
+  color: #4256e7 !important;
 }
 
 .user-menu .quick-access-panel li.unread,

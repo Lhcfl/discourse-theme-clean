@@ -1039,6 +1039,15 @@ tbody {
 .small-action.topic-post-visited .topic-post-visited-line .topic-post-visited-message {
   color: #4256e7;
 }
+.timeline-container .timeline-controls .btn.btn-icon,
+.timeline-footer-controls button{
+  background: #E8E7E9;
+  border: none;
+  color: #160f26;
+  &:hover {
+    background: #D0CFD4;
+  }
+}
 .timeline-container .topic-timeline .timeline-scrollarea {
   border-left: 1px solid #c6ccf8;
 }
@@ -1452,6 +1461,9 @@ div.edit-category .edit-category-nav .nav-stacked,
 .discourse-no-touch .btn-flat:hover .badge-notification .d-icon,
 .discourse-no-touch .btn-flat.btn-hover .badge-notification .d-icon {
   color: var(--secondary);
+}
+.discourse-tags{
+  gap: 5px
 }
 
 .badge-notification.unread-posts,

@@ -37,6 +37,9 @@ body {
 }
 a {
   color: var(--seqera-blue-primary);
+  &:visited {
+    color: var(--seqera-blue-primary);
+  }
 }
 h1,
 h2,
@@ -68,7 +71,6 @@ a.title {
 .docker-manager .btn,
 .btn-default,
 .btn-large,
-.btn.no-text,
 .btn-small {
   border-radius: 4px;
   border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
@@ -927,7 +929,8 @@ nav.post-controls .actions .double-button button:last-child {
 
 .sidebar-more-section-links-details-summary,
 .sidebar-more-section-links-details,
-.sidebar-section-link-wrapper .sidebar-section-link {
+.sidebar-section-link-wrapper .sidebar-section-link,
+.search-container .search-filters details.advanced-filters > summary {
   transition: all 0.5s;
   margin: 1px 10px 1px 10px;
   border-radius: 6px;
@@ -1376,7 +1379,8 @@ div.edit-category .edit-category-nav .nav-stacked,
 }
 
 .badge-notification.unread-posts,
-.badge-notification {
+.badge-notification,
+.chat-channel-row .chat-channel__metadata .chat-channel-unread-indicator {
   background-color: #4256e7 !important;
 }
 
@@ -1398,6 +1402,18 @@ div.edit-category .edit-category-nav .nav-stacked,
 .chat-emoji-picker__filter.dc-filter-input-container:hover,
 .chat-emoji-picker__filter.dc-filter-input-container:focus {
   border: 1px solid var(--tertiary-800);
+}
+.c-footer__item.--active .d-icon,
+.c-footer__item.--active .d-button-label,
+.discourse-no-touch .c-footer__item:hover .d-icon,
+.discourse-no-touch .c-footer__item:hover .d-button-label,
+.discourse-touch .c-footer__item:hover .d-icon,
+.discourse-touch .c-footer__item:hover .d-button-label,
+.discourse-no-touch .c-footer__item:focus .d-icon,
+.discourse-no-touch .c-footer__item:focus .d-button-label,
+.discourse-touch .c-footer__item:focus .d-icon,
+.discourse-touch .c-footer__item:focus .d-button-label {
+  color: var(--seqera-blue-primary);
 }
 
 /* MOBILE VIEW */

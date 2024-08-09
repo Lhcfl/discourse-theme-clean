@@ -91,7 +91,9 @@ a.title {
     color: inherit !important;
   }
 }
-
+.select-kit.combo-box.category-drop.has-selection .category-drop-header {
+  border-color: var(--seqera-black);
+}
 @mixin make-btn-border-and-d-icon(
   $border-color: 0,
   $bg-color: 0,
@@ -758,6 +760,9 @@ body.has-full-page-chat .alert-info {
   border-radius: var(--ant-radius);
   box-shadow: var(--menu-box-shadow);
 }
+.menu-panel .panel-body-bottom .btn {
+  border: none;
+}
 
 /*   Modal   */
 .modal .modal-inner-container {
@@ -1062,6 +1067,14 @@ tbody {
   margin-top: 8px;
 }
 @media (max-width: 780px) {
+  /* Details */
+  #create-topic.btn-default,
+  .btn-primary,
+  .discourse-no-touch .btn-primary {
+    & .d-icon.d-icon-plus {
+      display: flex;
+    }
+  }
   .modal-footer {
     padding: 14px 15px 10px 15px;
   }
@@ -1168,7 +1181,10 @@ tbody {
   border-radius: var(--ant-radius);
   overflow: hidden;
   box-shadow: var(--float-btn-shadow);
-  border-color: var(--tertiary-500);
+  border-color: var(--seqera-black);
+}
+#topic-progress .bg {
+  background-color: #fff;
 }
 
 #topic-progress-wrapper.docked {
@@ -1422,7 +1438,7 @@ div.edit-category .edit-category-nav .nav-stacked,
 .user-menu .quick-access-panel li.pending,
 .user-notifications-list li.unread,
 .user-notifications-list li.pending {
-  background-color: #eae8f1;
+  background-color: #f5f4f6;
 }
 #quick-access-all-notifications .user-menu-button-all-notifications li a {
   color: var(--seqera-black);

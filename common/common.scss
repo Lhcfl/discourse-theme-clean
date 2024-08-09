@@ -972,7 +972,7 @@ nav.post-controls .actions .double-button button:last-child {
   background: #e8e7e9;
   border-radius: 4px;
   & svg {
-    color: var(--seqera-black);
+    color: var(--seqera-black)!important;
   }
 }
 
@@ -1405,10 +1405,10 @@ div.edit-category .edit-category-nav .nav-stacked,
 .btn.btn-icon,
 .btn-default {
   border-radius: 4px;
-  &:hover {
+  &:not(.btn-primary):hover {
     background-color: var(--seqera-grey-bg);
   }
-  &:hover svg {
+  &:not(.btn-primary):hover svg {
     color: inherit;
   }
 }
@@ -1416,6 +1416,9 @@ div.edit-category .edit-category-nav .nav-stacked,
 .emoji-picker {
   border-radius: var(--ant-radius);
   box-shadow: var(--menu-box-shadow);
+}
+.quick-access-panel a {
+  color: var(--seqera-black);
 }
 
 .discourse-no-touch .btn-flat:hover .badge-notification .d-icon,

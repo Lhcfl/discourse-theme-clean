@@ -378,8 +378,7 @@ nav.post-controls .actions button {
   text-transform: capitalize;
   color: var(--seqera-black, #160f26);
   &:hover {
-    background: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
-    color: #ffffff;
+    background-color: #e8e7e9;
   }
 }
 .select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
@@ -1225,14 +1224,19 @@ tbody {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    margin: 0px 0px 25px;
+    margin: 0px auto 25px;
+    max-width: 70%;
     gap: 20px;
-  & .category-heading .category-logo{
+
+  & .category-logo{
     max-width: 70px;
+    display: flex;
+    margin: auto;
   }
   & p {
     font-family: var(--heading-font), Helvetica, sans-serif;
     margin: auto 0px;
+    font-weight: 500;
   } 
 
 }
@@ -1626,6 +1630,7 @@ aside.onebox {
 .category-heading {
   flex-wrap: nowrap;
   flex-direction: row;
+  max-width: none;
   & .category-heading .category-logo{
     display: flex;
     align-items: center;

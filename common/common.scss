@@ -383,9 +383,6 @@ nav.post-controls .actions button {
 }
 .select-kit.combo-box.category-drop .category-drop-header[data-value=""] {
   color: var(--seqera-black, #160f26);
-  &:hover {
-    color: #fff;
-  }
 }
 
 /* Tag button */
@@ -971,7 +968,7 @@ nav.post-controls .actions .double-button button:last-child {
   background: #e8e7e9;
   border-radius: 4px;
   & svg {
-    color: var(--seqera-black)!important;
+    color: var(--seqera-black) !important;
   }
 }
 
@@ -1136,7 +1133,6 @@ tbody {
   padding: 0px 15px;
 }
 
-
 .directory-table {
   width: 99%;
 }
@@ -1221,14 +1217,14 @@ tbody {
 /* Category */
 .category-heading {
   display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: 0px auto 25px;
-    max-width: 70%;
-    gap: 20px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0px auto 25px;
+  max-width: 70%;
+  gap: 20px;
 
-  & .category-logo{
+  & .category-logo {
     max-width: 70px;
     display: flex;
     margin: auto;
@@ -1237,10 +1233,8 @@ tbody {
     font-family: var(--heading-font), Helvetica, sans-serif;
     margin: auto 0px;
     font-weight: 500;
-  } 
-
+  }
 }
-
 
 .category-list-item.category {
   border-radius: var(--ant-radius);
@@ -1631,14 +1625,13 @@ aside.onebox {
   flex-wrap: nowrap;
   flex-direction: row;
   max-width: none;
-  & .category-heading .category-logo{
+  & .category-heading .category-logo {
     display: flex;
     align-items: center;
   }
   & p {
     font-size: 20px;
-  } 
-
+  }
 }
 
 /* new chat composer */

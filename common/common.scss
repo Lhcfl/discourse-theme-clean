@@ -1587,6 +1587,19 @@ div.edit-category .edit-category-nav .nav-stacked,
   .mobile-view .nav-controls-hidden .list-controls .navigation-controls {
     right: -80px;
   }
+  /* Category */
+  .category-heading {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: none;
+    & .category-heading .category-logo {
+      display: flex;
+      align-items: center;
+    }
+    & p {
+      font-size: 20px;
+    }
+  }
 }
 
 .mobile-view
@@ -1619,19 +1632,6 @@ aside.onebox {
 }
 .mobile-view .discourse-reactions-actions .reactions-counter {
   padding-top: 0;
-}
-/* Category */
-.category-heading {
-  flex-wrap: nowrap;
-  flex-direction: row;
-  max-width: none;
-  & .category-heading .category-logo {
-    display: flex;
-    align-items: center;
-  }
-  & p {
-    font-size: 20px;
-  }
 }
 
 /* new chat composer */

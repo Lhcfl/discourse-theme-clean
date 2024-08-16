@@ -929,7 +929,7 @@ nav.post-controls .actions .double-button button:last-child {
   border: none;
 }
 .custom-search-banner-wrap .search-menu {
-  max-width: 807px;
+  max-width: 1091px;
 }
 
 /*   Sidebar   */
@@ -1035,20 +1035,22 @@ tbody {
 .topic-list .topic-list-item-separator .topic-list-data {
   border-top: 1px solid #4256e7;
 }
-.small-action.topic-post-visited .topic-post-visited-line{
+.small-action.topic-post-visited .topic-post-visited-line {
   border-bottom: 1px solid #4256e7;
 }
 .topic-list .topic-list-item-separator .topic-list-data span,
-.small-action.topic-post-visited .topic-post-visited-line .topic-post-visited-message {
+.small-action.topic-post-visited
+  .topic-post-visited-line
+  .topic-post-visited-message {
   color: #4256e7;
 }
 .timeline-container .timeline-controls .btn.btn-icon,
-.timeline-footer-controls button{
-  background: #E8E7E9;
+.timeline-footer-controls button {
+  background: #e8e7e9;
   border: none;
   color: #160f26;
   &:hover {
-    background: #D0CFD4;
+    background: #d0cfd4;
   }
 }
 .timeline-container .topic-timeline .timeline-scrollarea {
@@ -1465,8 +1467,8 @@ div.edit-category .edit-category-nav .nav-stacked,
 .discourse-no-touch .btn-flat.btn-hover .badge-notification .d-icon {
   color: var(--secondary);
 }
-.discourse-tags{
-  gap: 5px
+.discourse-tags {
+  gap: 5px;
 }
 
 .badge-notification.unread-posts,
@@ -1712,4 +1714,101 @@ html.mobile-view {
   }
 }
 
+//Changing layout order
+.discourse-root.ember-view {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#main-outlet-wrapper{
+  display: flex;
+}
+.sidebar-wrapper {
+  order: 2;
+}
+.d-header-wrap .header-sidebar-toggle {
+  order: 4;
+}
+.has-sidebar-page .sidebar-wrapper{
+  border-left: 1px solid #cfd0d1
+}
+.sidebar-wrapper .sidebar-container,
+.has-sidebar-page .sidebar-wrapper {
+  border-right: none;
+}
+.header-buttons .auth-buttons .btn-text {
+  color: var(--seqera-black);
+  background: none;
+  &:after {
+    content: " ";
+    display: block;
+    height: 2px;
+    left: -2px;
+    position: relative;
+    transition: all 0.3s;
+    top: 7px;
+  }
+  &:hover:after {
+    background-color: var(--seqera-black);
+  }
+}
+
+.header-buttons .auth-buttons .btn-icon-text {
+  border-radius: 30px;
+  border: 1px solid #160f26;
+  display: flex;
+  height: 40px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  color: var(--seqera-black);
+  & svg.d-icon {
+    color: var(--seqera-black);
+  }
+  &:hover {
+    background-color: #160f26;
+    color: white;
+    transition: all 0.3s;
+  }
+  &:hover svg.d-icon {
+    color: white;
+  }
+}
+
 @import "components/clean-user-card";
+
+// .header-buttons-list-signup,
+// .nav-item.fw-signup {
+//   border-radius: 30px;
+//   border: 1px solid #160f26;
+//   display: flex;
+//   height: 40px;
+//   padding: 10px 20px;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 10px;
+// }
+
+// .nav-item.fw-signup:hover {
+//   background-color: #160f26;
+//   color: white;
+//   transition: all 0.3s;
+// }
+// .nav-item.fw-signup:hover .nav-link {
+//   color: white;
+// }
+
+// li.nav-item.fw-login:after {
+//   content: " ";
+//   display: block;
+//   height: 2px;
+//   left: -2px;
+//   position: relative;
+//   transition: all 0.3s;
+//   top: 7px;
+// }
+// li.nav-item.fw-login:hover:after {
+//   background-color: #160f26;
+// }

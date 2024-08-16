@@ -1715,7 +1715,7 @@ html.mobile-view {
 }
 
 //Changing layout order
-.discourse-root.ember-view {
+.discourse-root{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;

@@ -1738,6 +1738,9 @@ html.mobile-view {
 .has-sidebar-page .sidebar-wrapper {
   border-right: none;
 }
+.sidebar-wrapper .sidebar-sections:hover{
+  scrollbar-color: none;
+}
 .header-buttons .auth-buttons .btn-text {
   color: var(--seqera-black);
   background: none;

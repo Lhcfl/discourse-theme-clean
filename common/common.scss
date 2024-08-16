@@ -1718,13 +1718,15 @@ html.mobile-view {
 .discourse-root{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
 }
 #main-outlet-wrapper{
   display: flex;
 }
 .sidebar-wrapper {
   order: 2;
+}
+#main-outlet{
+  width: 100%;
 }
 .d-header-wrap .header-sidebar-toggle {
   order: 4;

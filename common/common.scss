@@ -1547,6 +1547,7 @@ div.edit-category .edit-category-nav .nav-stacked,
 }
 .mobile-view .list-controls #navigation-bar.nav-pills {
   flex-wrap: nowrap;
+  overflow-x: scroll;
   > li,
   > li a {
     justify-content: center;
@@ -1604,6 +1605,12 @@ div.edit-category .edit-category-nav .nav-stacked,
   }
   .mobile-view .nav-controls-hidden .list-controls .navigation-controls {
     right: -80px;
+  }
+  .custom-search-banner-wrap .search-menu {
+    margin: 0px 20px;
+  }
+  .d-header-wrap .header-sidebar-toggle {
+    order: 4;
   }
   /* Category */
   .category-heading {

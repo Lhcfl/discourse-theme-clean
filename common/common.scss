@@ -417,12 +417,10 @@ input:hover,
 
 /* Navigation */
 
-html.mobile-view #navigation-bar {
-  .nav-pills>li button{
-    border: none;
-    box-shadow: none;
-    border-radius: none;
-  }
+html.mobile-view #navigation-bar.nav-pills>li button{
+  border: none;
+  box-shadow: none;
+  border-radius: none;
 }
 
 .nav-pills {
@@ -1181,7 +1179,7 @@ div.edit-category .edit-category-nav .nav-stacked,
   > li a {
     justify-content: center;
     min-width: max-content;
-    width: 100%;
+    // width: 100%;
     border-radius: 0;
   }
 }

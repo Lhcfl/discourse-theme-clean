@@ -417,6 +417,14 @@ input:hover,
 
 /* Navigation */
 
+html.mobile-view #navigation-bar {
+  .nav-pills>li button{
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+}
+
 .nav-pills {
   box-shadow: 0 3px 0 var(--primary-50);
   li {
@@ -1156,29 +1164,6 @@ div.edit-category .edit-category-nav .nav-stacked,
 .chat-emoji-picker__filter.dc-filter-input-container:hover,
 .chat-emoji-picker__filter.dc-filter-input-container:focus {
   border: 1px solid var(--tertiary-800);
-}
-
-.mobile-view
-  .navigation-topics
-  .list-controls
-  .navigation-container
-  .category-breadcrumb,
-.mobile-view
-  .categories-list
-  .list-controls
-  .navigation-container
-  .category-breadcrumb,
-.mobile-view
-  body[class*="tag-"]:not(.archetype-regular):not(.archetype-banner)
-  .list-controls
-  .navigation-container
-  .category-breadcrumb,
-.mobile-view
-  body[class*="category-"]:not(.archetype-regular):not(.archetype-banner)
-  .list-controls
-  .navigation-container
-  .category-breadcrumb {
-  display: flex !important;
 }
 
 /*  Upd at 2023/4/30 */

@@ -13,7 +13,7 @@
     0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
   /*   SQR vars   */
   --base-font: "Inter", sans-serif;
-  --heading-font: "Degular", serif;
+  --heading-font: "Degular", sans-serif;
   --color-brand: #3498db;
   --grey-neutral-white: #fff;
   --sqr-econdary: #2980b9;
@@ -1239,7 +1239,7 @@ div.edit-category .edit-category-title-bar {
   color: var(--seqera-black, #160f26);
 }
 .select-kit.combo-box.tag-drop .tag-drop-header {
-  border-color: #160f26;
+  border-color: #160f26!important;
 }
 /* Group */
 .groups-boxes .group-box {

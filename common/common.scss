@@ -1565,9 +1565,6 @@ div.edit-category .edit-category-nav .nav-stacked,
   .mobile-view .nav-controls-hidden .list-controls .navigation-controls {
     right: -80px;
   }
-  .custom-search-banner-wrap .search-menu {
-    margin: 0px 20px;
-  }
   .d-header-wrap .header-sidebar-toggle {
     order: 4;
   }
@@ -1713,12 +1710,19 @@ html.mobile-view {
     background-color: var(--seqera-black);
   }
 }
-  @media (max-width: 1200px) and (min-width: 780px)  {
+  @media (max-width: 1200px) and (min-width: 768px)  {
     #main-outlet-wrapper,
     .search-banner {
       margin: 0px 40px;
       justify-content: center;      
       width: calc(100% - 80px);
+    }
+  }
+  @media (max-width: 768px) {
+    #main-outlet-wrapper,
+    .custom-search-banner-wrap {
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
 

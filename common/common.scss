@@ -1497,8 +1497,6 @@ div.edit-category .edit-category-nav .nav-stacked,
   display: flex !important;
 }
 
-/*  Upd at 2023/4/30 */
-
 .mobile-view .full-width #list-area .topic-list .topic-list-body {
   border-top: none;
 }
@@ -1714,7 +1712,14 @@ html.mobile-view {
   &:hover:after {
     background-color: var(--seqera-black);
   }
-}
+  @media (max-width: 1200px) and (min-width: 780px)  {
+    #main-outlet,
+    .search-banner {
+      margin: 0px 40px;
+      justify-content: center;      
+      width: calc(100% - 80px);
+    }
+  }
 
 .header-buttons .auth-buttons .btn-icon-text {
   border-radius: 30px;

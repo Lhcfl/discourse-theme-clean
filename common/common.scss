@@ -28,13 +28,20 @@
   --tertiary-high: #160f26;
 }
 
-* {
+body {
   font-family: var(--base-font), Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+.posts-wrapper {
+  font-family: var(--base-font), Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 code > * {
   font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
 }
+
 a {
   color: var(--seqera-blue-primary);
   &:visited {

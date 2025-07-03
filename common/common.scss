@@ -1313,3 +1313,7 @@ html.mobile-view {
 .sidebar-footer-wrapper .sidebar-footer-actions-button.btn {
   border: 1px solid transparent;
 }
+
+.btn-transparent, .btn-transparent.btn-default, .btn-transparent.btn-text, .btn-transparent.btn-icon, .btn-transparent.no-text, .d-modal.json-schema-editor-modal .je-ready button.btn-transparent, .d-modal.json-schema-editor-modal .je-ready .btn-transparent.json-editor-btn-delete {
+  border: 1px solid transparent;
+}

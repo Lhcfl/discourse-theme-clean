@@ -1317,3 +1317,7 @@ html.mobile-view {
 .btn-transparent, .btn-transparent.btn-default, .btn-transparent.btn-text, .btn-transparent.btn-icon, .btn-transparent.no-text, .d-modal.json-schema-editor-modal .je-ready button.btn-transparent, .d-modal.json-schema-editor-modal .je-ready .btn-transparent.json-editor-btn-delete {
   border: 1px solid transparent;
 }
+
+.category-row.select-kit-row .badge-category__icon .d-icon {
+    color: inherit !important;
+}

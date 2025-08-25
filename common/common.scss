@@ -1,6 +1,12 @@
+// button
+
 :root {
-  --btn-default-border: var(--primary-300);
-  --btn-default-hover: var(--tertiary-800);
+  --d-button-border: 1px solid transparent;
+  --d-button-default-bg-color: var(--secondary);
+  --d-button-default-bg-color--hover: var(--secondary);
+  --d-button-default-text-color--hover: var(--tertiary-800);
+  --d-button-default-icon-color--hover: var(--tertiary-800);
+  --d-button-transition: all 0.3s;
   --d-button-border-radius: 6px;
   --btn-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
   --d-input-border-radius: 6px;
@@ -13,6 +19,27 @@
     0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
 }
 
+.discourse-no-touch .btn {
+  &.btn-default {
+    --d-button-border: 1px solid var(--primary-300);
+    &:hover {
+      --d-button-border: 1px solid var(--tertiary-700);
+    }
+  }
+  &.btn-primary {
+    // --d-button-border: 1px solid var(--tertiary);
+    &:hover {
+      --d-button-border: 1px solid var(--tertiary-hover);
+    }
+  }
+  &.btn-danger {
+    // --d-button-border: 1px solid var(--danger);
+    &:hover {
+      --d-button-border: 1px solid var(--danger-hover);
+    }
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
     helvetica neue, Arial, noto sans, sans-serif;
@@ -20,269 +47,6 @@ body {
 
 @mixin transition-300 {
   transition: all 0.3s;
-}
-
-/* 全局 按钮 Global button */
-.docker-manager .btn,
-.btn-default,
-.btn-large,
-.btn-small,
-.btn-primary {
-  border: 1px solid var(--btn-default-border);
-  box-shadow: var(--btn-box-shadow);
-}
-
-@mixin make-btn-border-and-d-icon(
-  $border-color: 0,
-  $bg-color: 0,
-  $text-color: 0
-) {
-  @if $border-color != 0 {
-    border: 1px solid $border-color;
-    box-shadow: var(--btn-box-shadow);
-  }
-  @if $bg-color != 0 {
-    background: $bg-color;
-  }
-  @if $text-color != 0 {
-    color: $text-color;
-  }
-  .d-icon {
-    @if $text-color != 0 {
-      color: $text-color;
-    }
-  }
-}
-
-@mixin make-btn(
-  $v-border-color: 0,
-  $no-shadow: 0,
-  $v-bg-color: 0,
-  $v-text-color: 0,
-  $v-border-color-hover: 0,
-  $v-bg-color-hover: 0,
-  $v-text-color-hover: 0,
-  $v-border-color-active: 0
-) {
-  @include transition-300();
-  .d-icon {
-    @include transition-300();
-  }
-
-  @if $v-border-color != 0 {
-    border: 1px solid $v-border-color;
-    @if $no-shadow == 0 {
-      box-shadow: var(--btn-box-shadow);
-    }
-  }
-  @if $v-text-color != 0 {
-    color: $v-text-color;
-  }
-  @if $v-bg-color != 0 {
-    background-color: $v-bg-color;
-  }
-
-  .discourse-no-touch &:hover,
-  .discourse-no-touch &.btn-hover,
-  &:focus {
-    @include make-btn-border-and-d-icon(
-      $v-border-color-hover,
-      $v-bg-color-hover,
-      $v-text-color-hover
-    );
-  }
-  &:active,
-  &.btn-active {
-    @include make-btn-border-and-d-icon(
-      $v-border-color-active,
-      $v-bg-color,
-      $v-text-color
-    );
-  }
-  .disabled,
-  [disabled] {
-    opacity: 0.6;
-    @include make-btn-border-and-d-icon(
-      $v-border-color,
-      $v-bg-color,
-      $v-text-color
-    );
-    &:hover,
-    &:active,
-    &.btn-hover,
-    &.btn-active {
-      background: transparent;
-      @include make-btn-border-and-d-icon(
-        $v-border-color,
-        $v-bg-color,
-        $v-text-color
-      );
-    }
-  }
-}
-
-.btn {
-  @include make-btn(
-    $v-border-color: 0,
-    $no-shadow: 0,
-    $v-bg-color: var(--secondary),
-    $v-text-color: var(--primary-high),
-    $v-border-color-hover: var(--tertiary-900),
-    $v-bg-color-hover: var(--secondary),
-    $v-text-color-hover: var(--btn-default-hover),
-    $v-border-color-active: var(--primary-600)
-  );
-  .discourse-no-touch &:active {
-    scale: 0.95;
-  }
-}
-.btn-flat {
-  @include make-btn($no-shadow: 1, $v-border-color: transparent);
-  box-shadow: none;
-}
-.btn-transparent {
-  @include make-btn(
-    $v-text-color: var(--primary-high),
-    $v-text-color-hover: var(--primary)
-  );
-}
-.btn-primary {
-  @include make-btn(
-    $v-border-color: transparent,
-    $v-bg-color: var(--tertiary),
-    $v-text-color: var(--secondary),
-    $v-border-color-hover: transparent,
-    $v-bg-color-hover: var(--tertiary-hover),
-    $v-text-color-hover: var(--secondary),
-    $v-border-color-active: transparent
-  );
-}
-.btn-danger {
-  @include make-btn(
-    $v-border-color: var(--danger),
-    $v-bg-color: var(--secondary),
-    $v-text-color: var(--danger),
-    $v-border-color-hover: var(--danger-hover),
-    $v-bg-color-hover: var(--danger-low),
-    $v-text-color-hover: var(--danger-hover),
-    $v-border-color-active: var(--danger-hover)
-  );
-}
-.btn-success {
-  @include make-btn(
-    $v-border-color: var(--success),
-    $v-bg-color: var(--secondary),
-    $v-text-color: var(--success),
-    $v-border-color-hover: var(--success-hover),
-    $v-bg-color-hover: var(--success-low),
-    $v-text-color-hover: var(--success-hover),
-    $v-border-color-active: var(--success-hover)
-  );
-}
-
-nav.post-controls .actions button {
-  @include make-btn(
-    $v-bg-color: transparent,
-    $v-bg-color-hover: var(--tertiary-300),
-    $v-text-color-hover: var(--tertiary)
-  );
-  border: none;
-
-  .d-icon {
-    color: var(--primary-700);
-  }
-
-  .discourse-no-touch &:hover,
-  .discourse-no-touch &.btn-hover,
-  &:focus {
-    border: none;
-  }
-
-  &.delete {
-    @include make-btn(
-      $v-bg-color: transparent,
-      $v-bg-color-hover: var(--danger-low),
-      $v-text-color-hover: var(--danger-hover)
-    );
-  }
-}
-
-.chat-drawer-header__right-actions .btn {
-  background: transparent;
-}
-
-.follow-button-container .btn,
-.categories-admin-dropdown.select-kit .select-kit-header,
-.user-notifications.select-kit .select-kit-header,
-.pinned-options.select-kit .select-kit-header,
-.notifications-button.select-kit .select-kit-header {
-  border: 1px solid var(--primary-300);
-}
-.notifications-button.select-kit .select-kit-header .d-icon-d-watching {
-  color: var(--tertiary-800);
-}
-
-.topic-admin-popup-menu .btn.btn-hover,
-.topic-admin-popup-menu .btn:hover,
-.topic-admin-popup-menu .btn:focus,
-.post-admin-menu .btn.btn-hover,
-.post-admin-menu .btn:hover,
-.post-admin-menu .btn:focus {
-  border: 1px solid transparent;
-  background: var(--tertiary-100);
-  border-radius: var(--ant-radius);
-}
-
-.btn-flat.show-replies {
-  border-radius: var(--ant-radius);
-}
-
-.btn.chat-composer__send-btn {
-  margin-top: 5px;
-  background: var(--tertiary);
-}
-.btn.chat-composer__send-btn:hover {
-  background: var(--tertiary-hover) !important;
-}
-.btn.chat-composer__send-btn * {
-  color: var(--secondary);
-}
-
-.composer-controls .btn,
-.discourse-no-touch .composer-controls .btn:hover,
-.discourse-no-touch .composer-controls .btn.btn-hover,
-.discourse-no-touch .composer-controls .btn:focus {
-  background-color: transparent;
-}
-
-.fk-d-menu {
-  .btn.btn-icon-text {
-    border: none !important;
-  }
-  .dropdown-menu__item {
-    @include transition-300();
-    &:hover {
-      background-color: var(--tertiary-300);
-      &.topic-admin-delete {
-        background-color: var(--danger-low);
-      }
-    }
-  }
-}
-
-.more-topics__container {
-  .btn {
-    border: none !important;
-  }
-}
-
-/* select-kit combox */
-
-.select-kit.single-select.dropdown-select-box.is-expanded
-  .select-kit-collection,
-.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
-  box-shadow: var(--menu-box-shadow);
-  border-radius: var(--ant-radius);
 }
 
 .select-kit .select-kit-header:not(.btn),

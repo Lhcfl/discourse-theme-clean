@@ -575,13 +575,6 @@ body.has-full-page-chat .alert-info {
   }
 }
 
-.desktop-view.has-full-page-chat:not(.discourse-sidebar) #main-outlet {
-  margin-left: 10px;
-}
-.desktop-view.has-full-page-chat:not(.discourse-sidebar) .full-page-chat {
-  border: 1px solid var(--primary-low);
-  border-radius: var(--ant-radius);
-}
 .d-header .chat-channel-unread-indicator {
   scale: 0.7;
   transform: translate(-5px, 26px);
@@ -775,47 +768,17 @@ nav.post-controls .actions > button.reply:last-child:hover * {
   scale: 1;
   border: none;
 }
-.d-header {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
-}
 .btn.btn-sidebar-toggle:active {
   border: none;
 }
 
 /*   Sidebar   */
 
-.sidebar-wrapper {
-  background-color: var(--secondary);
-}
-.has-sidebar-page .sidebar-wrapper {
-  border-right: 1px solid var(--primary-low);
-}
-
-.sidebar-more-section-links-details-summary,
-.sidebar-more-section-links-details,
-.sidebar-section-link-wrapper .sidebar-section-link {
-  transition: all 0.5s;
-  margin: 1px 10px 1px 10px;
-  border-radius: 6px;
-}
-.sidebar-section-link-wrapper .sidebar-section-link.active {
-  background: var(--tertiary-100);
-  color: var(--tertiary-hover);
-}
-.sidebar-section-link-wrapper .sidebar-section-link.active .d-icon {
-  color: var(--tertiary-hover);
-}
-
-.sidebar-section-wrapper .sidebar-section-header-wrapper {
-  transition: all 0.5s;
-  margin: 1px 10px 1px 10px;
-  /*         border-bottom: 1px solid var(--primary-low); */
-  color: var(--primary-low);
-}
-.discourse-no-touch
-  .sidebar-section-wrapper
-  .sidebar-section-header-wrapper:hover {
-  background: transparent;
+:root {
+  --d-sidebar-header-font-weight: bold;
+  --d-sidebar-header-color: var(--primary-very-high);
+  --d-sidebar-active-color: var(--tertiary);
+  --d-sidebar-row-height: 2.3em;
 }
 
 /* 细节 */
@@ -1316,4 +1279,36 @@ html.mobile-view {
 
 .btn-transparent, .btn-transparent.btn-default, .btn-transparent.btn-text, .btn-transparent.btn-icon, .btn-transparent.no-text, .d-modal.json-schema-editor-modal .je-ready button.btn-transparent, .d-modal.json-schema-editor-modal .je-ready .btn-transparent.json-editor-btn-delete {
   border: 1px solid transparent;
+}
+
+/** topic-list */
+:root {
+  --title-color--read: var(--primary-high);
+}
+
+table.topic-list {
+  --d-table-border-top-height: 1px;
+  
+  tbody {
+    border-top: var(--d-table-border-top-height) solid var(--primary-low-mid);
+  }
+}
+
+.topic-list-layout-table-ai .topic-list-item .excerpt__contents {
+  font-size: var(--font-down-1);
+  max-width: unset;
+}
+
+:root {
+  --category-badge-size: 0.85em;
+}
+
+.discourse-tag.bullet::before {
+  border-radius: 999px;
+  width: 10px;
+  height: 10px;
+}
+
+.badge-category__wrapper .badge-category {
+  align-items: center;
 }

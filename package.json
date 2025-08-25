@@ -7,7 +7,8 @@
     "prettier": "^2.8.8"
   },
   "scripts": {
-    "pretty:all": "yarn prettier -w $(git ls-files '*.hbs') $(git ls-files '*.js') $(git ls-files '*.gjs') $(git ls-files '*.yml') $(git ls-files '*.scss')", 
-    "pretty": "yarn prettier -w $(git ls-files -m '*.hbs') $(git ls-files -m '*.js') $(git ls-files -m '*.gjs') $(git ls-files -m '*.yml') $(git ls-files -m '*.scss')" 
-  }
+    "pretty:all": "yarn prettier -w $(git ls-files '*.hbs') $(git ls-files '*.js') $(git ls-files '*.gjs') $(git ls-files '*.yml') $(git ls-files '*.scss')",
+    "pretty": "yarn prettier -w $(git ls-files -m '*.hbs') $(git ls-files -m '*.js') $(git ls-files -m '*.gjs') $(git ls-files -m '*.yml') $(git ls-files -m '*.scss')"
+  },
+  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
 }
